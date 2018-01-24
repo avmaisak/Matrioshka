@@ -22,7 +22,7 @@ let gulpCfg = {
 	/*
 	Matrioshka. 
 	${pkgInfo.description}
-	Source code: https://dev.s1.rus-bit.com/RusBit/Matrioshka
+	Source code: https://github.com/rus-bit/Matrioshka
 	Home: https://rus-bit.com/matrioshka/
 	Version: ${ pkgInfo.version }
 	Build date ${dateFormat(new Date(), "yyyy.mm.dd hh:MM")}

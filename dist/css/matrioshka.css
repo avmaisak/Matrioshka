@@ -1,3 +1,7 @@
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
 *,
 *::before,
 *::after {

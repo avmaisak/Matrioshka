@@ -1,3 +1,5 @@
+//mediaqueries
+
 @mixin smx() {
 	@media screen and (max-width:$resp-bp-sm-x) {
 		@content;

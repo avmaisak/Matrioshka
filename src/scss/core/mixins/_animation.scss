@@ -1,3 +1,5 @@
+//animation mixins
+
 @mixin count($count: 1) {
 	-webkit-animation-iteration-count: $count;
 	   -moz-animation-iteration-count: $count;

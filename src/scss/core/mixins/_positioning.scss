@@ -1,9 +1,21 @@
+//positioning mixins
+
 // Mixin itself
 @mixin clearfix() {
+	&::before,
 	&::after {
 		display: block;
 		content: "";
 		clear: both;
+	}
+}
+
+// To quickly centre a block element without having to worry about 
+// if there is any top or bottom margin already applied.
+@mixin push-auto {
+	margin: {
+		left: auto;
+		right: auto; 
 	}
 }
 

@@ -1,3 +1,5 @@
+//responsive grid mixins
+
 @mixin grid-row ($iterator) {
 	flex-basis:$iterator + %;
 	flex-grow:$m_unit_zero;

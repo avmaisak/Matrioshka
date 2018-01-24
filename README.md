@@ -7,6 +7,3 @@
 
 исходный код:
 <https://github.com/rus-bit/Matrioshka>
-
-документация
-<https://rus-bit.github.io/Matrioshka/>

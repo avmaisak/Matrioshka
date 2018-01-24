@@ -1,0 +1,17 @@
+@import "config/_m.theme.config";
+
+html {
+	body {
+
+		&,* {
+			font-family: $theme-default-font;
+		}
+		color:$theme-default-color;
+
+		@import "_m.display";
+		@import "_m.positioning";
+		@import "_m.typography";
+		@import "_m.form";
+		@import "_m.table";
+	}
+}

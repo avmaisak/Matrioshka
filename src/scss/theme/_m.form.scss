@@ -1,0 +1,131 @@
+@mixin btn($clr,$clr-hover,$clr-active) {
+	text-decoration: none;
+	color: $clr;
+	border: solid 1px $clr;
+	padding: $m_unit_def*($m_unit_gold/2.5) $m_unit_def * $m_unit_gold;
+	margin: 0;
+	border-radius: $theme-brd-radius;
+	font-size: $m_unit_def;
+	display:inline-block;
+	background-color: transparent;
+
+	i:empty{
+		margin:auto $theme-default-padding auto auto;
+	}
+
+	&:hover {
+		color: $clr-hover;
+		border: solid 1px $clr-hover;
+	}
+
+	&:active {
+		color: $clr-active;
+		background-color: $clr;
+		border: solid 1px $clr;
+	}
+
+	&.btn-block {
+		display: block;
+		width:100%;
+	}
+}
+
+@mixin placeholderProps ($clr, $opacity) {
+	& ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: $clr;
+		opacity: $opacity;
+	}
+
+	& ::-moz-placeholder { /* Firefox 19+ */
+		color: $clr;
+		opacity: $opacity;
+	}
+
+	& :-ms-input-placeholder { /* IE 10+ */
+		color: $clr;
+		opacity: $opacity;
+	}
+
+	& :-moz-placeholder { /* Firefox 18- */
+		color: $clr;
+		opacity: $opacity;
+	}
+}
+
+@mixin input($clr,$clr-hover,$clr-active, $brd-width) {
+	border: solid $brd-width $clr;
+	padding: $theme-default-padding * 0.7;
+	margin: $theme-default-padding* 0.2 0;
+	color: $clr-hover;
+	font-size: $m_unit_def * 0.9;
+	display: block;
+	width:100%;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	line-height: $m_unit_gold;
+
+	@include placeholderProps($theme-default-color-light-x, $theme-opacity-light);
+
+	&:invalid {
+		border-left-color:$theme-color-red;
+	}
+
+	&:focus {
+		border-color: $clr;
+	}
+
+	&:hover {
+		border-color:$clr-hover;
+	}
+
+	&:active {
+		border-color:$clr-active;
+	}
+
+	&:focus {
+		color: $clr-hover;
+		border-color: $clr-active;
+
+		@include placeholderProps($theme-default-color-light-x,$theme-opacity-light-x);
+	}
+}
+
+.frm-grp {
+	.frm-inp {
+		@include input($theme-default-color-light,$clr-safest-000,$theme-main-color,1px);
+	}
+}
+
+.btn {
+	@include btn($theme-main-color, $theme-main-color-dark,$clr-white);
+
+	
+}
+
+.btn-inverted {
+	@include btn($clr-white,$clr-white,$theme-main-color);
+	background-color: $theme-main-color;
+}
+.btn-green {
+	@include btn($theme-color-green, $theme-color-green-dark,$clr-white);
+}
+
+.btn-red {
+	@include btn($theme-color-red, $theme-color-red-dark,$clr-white);
+}
+
+.btn-orange {
+	@include btn($theme-color-orange, $theme-color-orange-dark,$clr-white);
+}
+
+.btn-gray {
+	@include btn($theme-default-color,$theme-default-color-light,$theme-default-color);
+}
+
+
+.btn-circle {
+	width: $m_unit_def * 3;
+	height: $m_unit_def * 3;
+	border-radius: 50%;
+	padding:0;
+	text-align:center;
+}

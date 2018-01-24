@@ -1,0 +1,97 @@
+@for $i from 1 through 6 {
+	.h#{$i},
+	h#{$i} {
+		line-height: $m_unit_default_line_height * 0.9;
+		font-size: $m_unit_def * $m_unit_default_line_height / ($i * 0.45);
+		padding: 0;
+		font-weight: $m_unit_wm;
+		color: color($theme-main-color-base,800);
+	}
+}
+
+p {
+	padding: $theme-default-padding 0;
+	line-height: $m_unit_default_line_height * 1.2;
+	font-size: $m_unit_def * .95;
+	font-weight: $m_unit_wm;
+}
+
+hr {
+	border: color($theme-main-color-base,800);
+	color: color($theme-main-color-base,800);
+}
+
+a {
+	color: color($theme-main-color-base,800);
+
+	&:hover {
+		//AD1357
+		color: color($theme-main-color-base,900);
+	}
+
+	&:active {
+		//AD1357
+		color: color($theme-main-color-base,a100);
+	}
+}
+
+.txt-cntr {
+	text-align:center;
+}
+.txt-jst {
+	text-align: justify;
+}
+.txt-jst-p {
+	p {
+		text-align: justify;
+	}
+}
+.txt-lft {
+	text-align: left;
+}
+.txt-rght {
+	text-align: right;
+}
+.txt-strong {
+	font-weight:bold;
+}
+.brd-dotted{
+	border-style:dotted;
+}
+.brd-dashed {
+	border-style: dashed;
+}
+
+code,
+pre,
+pre code {
+	font-family: $font-family-monospace;
+	font-size: $m_unit_def;
+	color: $theme-default-color;
+}
+
+
+@for $i from 1 through 7 {
+	$iterator: ($i * 100);
+
+	.txt-h#{$iterator} {
+		font-weight: $iterator;
+	}
+}
+
+@for $i from 1 through 10 {
+	$iterator: ($i);
+
+	.txt-sz#{$iterator} {
+		font-size: $iterator + rem;
+	}
+}
+
+@for $i from 1 through 10 {
+	$iterator: ($i);
+
+	.brd-rad#{$iterator} {
+		border-radius: $iterator + px;
+	}
+}
+

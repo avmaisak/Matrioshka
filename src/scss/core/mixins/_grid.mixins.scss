@@ -1,0 +1,39 @@
+@mixin grid-row ($iterator) {
+	flex-basis:$iterator + %;
+	flex-grow:$m_unit_zero;
+}
+
+@mixin grid-responsive() {
+
+	@for $i from 1 through $grid-cols {
+		$iterator: ($m_unit_perc * $i / $grid-cols);
+		&.w#{$i} {
+			@include grid-row ($iterator);
+		}
+
+		@include smx() {
+			&.wsmx#{$i} {
+				@include grid-row ($iterator);
+			}
+		}
+
+		@include sm() {
+			&.wsm#{$i} {
+				@include grid-row ($iterator);
+			}
+		}
+
+
+		@include md() {
+			&.wmd#{$i} {
+				@include grid-row ($iterator);
+			}
+		}
+
+		@include lg() {
+			&.wlg#{$i} {
+				@include grid-row ($iterator);
+			}
+		}
+	}
+}

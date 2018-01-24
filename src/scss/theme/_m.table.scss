@@ -1,0 +1,39 @@
+table {
+	width: $m_unit_perc_full;
+
+	thead {
+		tr {
+			th {
+				text-align: left;
+				border-bottom: solid 1px $theme-main-color;
+				color: $theme-main-color-dark;
+			}
+		}
+	}
+
+
+	td, th {
+		padding: $m_unit_def;
+	}
+
+	&.tbl-hover {
+		tbody {
+			tr {
+				&:hover {
+					td {
+						background-color: $theme-main-color-light;
+						color: $theme-main-color-dark;
+					}
+				}
+			}
+		}
+	}
+
+	&.tbl-strip {
+		tbody {
+			tr:nth-child(odd) {
+				background-color: $theme-main-color-light;
+			}
+		}
+	}
+}

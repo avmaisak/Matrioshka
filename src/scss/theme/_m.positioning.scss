@@ -1,0 +1,88 @@
+
+@for $i from 0 through 100 {
+	.hght-vh-#{$i} {
+		min-height: $i + vh;
+	}
+
+	.hght-vh-strict-#{$i} {
+		height: $i + vh;
+		min-height: $i + vh;
+		max-height: $i + vh;
+	}
+	.width#{$i} {
+		width: $i + %;
+	}
+
+	@include smx() {
+		.width-smx#{$i} {
+			width: $i + %;
+		}
+	}
+
+	@include sm() {
+		.width-sm#{$i} {
+			width: $i + %;
+		}
+	}
+
+	@include md() {
+		.width-md#{$i} {
+			width: $i + %;
+		}
+	}
+
+	@include lg() {
+		.width-lg#{$i} {
+			width: $i + %;
+		}
+	}
+}
+
+@for $i from 0 through 10 {
+	.pad-top-#{$i} {
+		padding-top: $i + rem;
+	}
+	.pad-btm-#{$i} {
+		padding-bottom: $i + rem;
+	}
+	.pad-lft-#{$i} {
+		padding-left: $i + rem;
+	}
+	.pad-rght-#{$i} {
+		padding-right: $i + rem;
+	}
+	.pad-#{$i} {
+		padding: $i + rem;
+	}
+	.mar-top-#{$i} {
+		margin-top: $i + rem;
+	}
+	.mar-btm-#{$i} {
+		margin-bottom: $i + rem;
+	}
+	.mar-lft-#{$i} {
+		margin-left: $i + rem;
+	}
+	.mar-rght-#{$i} {
+		margin-right: $i + rem;
+	}
+	.mar-#{$i} {
+		margin: $i + rem;
+	}
+}
+
+.blck-cntr {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+.clearfix {
+	@include clearfix();
+}
+
+.fix-top {
+	@include fixTop();
+}

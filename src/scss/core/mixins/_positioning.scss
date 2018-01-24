@@ -1,0 +1,29 @@
+// Mixin itself
+@mixin clearfix() {
+	&::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+//fixed to top
+@mixin fixTop() {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+}
+
+@mixin flt-l {
+	float: left !important;
+}
+
+@mixin flt-r {
+	float: right !important;
+}
+
+@mixin flt-none {
+	float: none !important;
+}
+

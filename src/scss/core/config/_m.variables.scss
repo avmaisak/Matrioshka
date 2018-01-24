@@ -1,0 +1,50 @@
+//matrioshka core config
+$m_unit_gold:1.61803398875;
+$pixelBase : 16;
+$m_unit_default_line_height: 1.48;
+$m_unit_perc:100;
+$m_unit_perc_full: $m_unit_perc + %;
+$m_unit_zero:0;
+$m_unit_transparent: transparent;
+$m_unit_def: 1rem;
+$m_unit_wl: 300;
+$m_unit_wm: 400;
+$m_unit_wb: 700;
+//960px
+$m_unit_size_gold: 60rem;
+$sharp: '#';
+$grid-cols: 12;
+//The default web fonts (Helvetica Neue, Helvetica, and Arial) have been dropped and replaced with a �native font stack� for optimum text rendering on every device and OS. Read more about
+//https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+$font-family-sans-serif:
+// Safari for OS X and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for OS X (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+"Roboto", "Oxygen","Ubuntu","Cantarell","Fira Sans", "Droid Sans",
+// Basic web fallback
+"Helvetica Neue", Arial, sans-serif,
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+// stylelint-disable value-keyword-case
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+$font-size-base: $m_unit_def !default; // Assumes the browser default, typically `16px`
+$font-weight-light: $m_unit_wl !default;
+$font-weight-normal: $m_unit_wm !default;
+$font-weight-bold: $m_unit_wb !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: $m_unit_default_line_height !default;
+// Small devices (landscape phones, 576px and up)
+$resp-bp-sm-x: $m_unit_def * 36;
+// Medium devices (tablets, 768px and up)
+$resp-bp-sm: $m_unit_def * 48;
+// Large devices (desktops, 992px and up)
+$resp-bp-md: $m_unit_def * 62;
+// Extra large devices (large desktops, 1200px and up)
+$resp-bp-lg: $m_unit_def * 75;
+$link-hover-decoration:underline;
+$table-cell-padding:$m_unit_zero;

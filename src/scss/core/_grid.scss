@@ -1,0 +1,45 @@
+
+//containers
+.cont-full, .cont {
+	margin: 0 auto;
+}
+.cont {
+
+	@include smx() {
+		width: $m_unit_perc_full;
+	}
+
+	@include sm() {
+		width: $m_unit_perc_full;
+	}
+
+	@include md() {
+		width: $m_unit_size_gold;
+	}
+
+	@include lg() {
+		width: $m_unit_size_gold;
+	}
+}
+.cont-full {
+	width: $m_unit_perc_full;
+}
+
+
+.rw {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+
+	.cl {
+		order: 1;
+		flex-grow: 1;
+		flex-shrink: 3;
+		flex-basis: $m_unit_perc / 12 + %;
+		align-self: stretch;
+		@include grid-responsive();
+	}
+}

@@ -1,0 +1,31 @@
+//Глобальные настройки темы
+//отступ
+$theme-default-padding: $m_unit_def / $m_unit_default_line_height;
+//шрифт
+$theme-default-font: $font-family-sans-serif ;
+//основной цвет (базовый)
+$theme-main-color-base: $indigo;
+$theme-main-color: color($theme-main-color-base,500);
+//основной цвет (осветленный)
+$theme-main-color-light: color($theme-main-color-base,50);
+//основной цвет (утемнЄнный)
+$theme-main-color-dark: color($theme-main-color-base,800);
+//цвет по умлочанию
+$theme-default-color: $clr-safest-333;
+//цвет по умлочанию (осветленный)
+$theme-default-color-light: color($grey,500);
+//цвет по умлочанию (осветленный)
+$theme-default-color-light-x: color($grey,700);
+//размер шрифта
+$theme-font-size-sm: $m_unit_def * .70;
+//радиус бордюра
+$theme-brd-radius: ($m_unit_def / $m_unit_gold) * .5;
+$theme-opacity-light:0.8;
+$theme-opacity-light-x:0.8 / 2;
+
+$theme-color-green: color($green,600);
+$theme-color-green-dark: color($green,800);
+$theme-color-red: color($red,600);
+$theme-color-red-dark: color($red,800);
+$theme-color-orange: color($orange,600);
+$theme-color-orange-dark: color($orange,800);

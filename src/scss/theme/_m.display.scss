@@ -1,0 +1,23 @@
+@include smx() {
+	.hide-smx{
+		display:none;
+	}
+}
+
+@include sm() {
+	.hide-sm {
+		display: none;
+	}
+}
+
+@include md() {
+	.hide-md {
+		display: none;
+	}
+}
+
+@include lg() {
+	.hide-lg {
+		display: none;
+	}
+}

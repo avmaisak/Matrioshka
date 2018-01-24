@@ -5078,38 +5078,6 @@ html body .blck-cntr {
   text-align: center;
 }
 
-html body .flt-r {
-  float: right;
-}
-
-@media screen and (max-width: 36rem) {
-  html body .flt-r-smx {
-    float: right;
-  }
-}
-
-@media screen and (min-width: 36rem) and (max-width: 62rem) {
-  html body .flt-r-sm {
-    float: right;
-  }
-}
-
-@media screen and (min-width: 62rem) and (max-width: 75rem) {
-  html body .flt-r-md {
-    float: right;
-  }
-}
-
-@media screen and (min-width: 75rem) {
-  html body .flt-r-lg {
-    float: right;
-  }
-}
-
-html body .flt-l {
-  float: left;
-}
-
 html body .clearfix::after {
   display: block;
   content: "";
@@ -5118,9 +5086,9 @@ html body .clearfix::after {
 
 html body .fix-top {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
 }
 
 html body .h1,
@@ -5442,8 +5410,8 @@ html body .btn {
   background-color: transparent;
 }
 
-html body .btn i {
-  font-size: 1.1rem;
+html body .btn i:empty {
+  margin: auto 0.67568rem auto auto;
 }
 
 html body .btn:hover {
@@ -5475,8 +5443,8 @@ html body .btn-inverted {
   background-color: #3f51b5;
 }
 
-html body .btn-inverted i {
-  font-size: 1.1rem;
+html body .btn-inverted i:empty {
+  margin: auto 0.67568rem auto auto;
 }
 
 html body .btn-inverted:hover {
@@ -5507,8 +5475,8 @@ html body .btn-green {
   background-color: transparent;
 }
 
-html body .btn-green i {
-  font-size: 1.1rem;
+html body .btn-green i:empty {
+  margin: auto 0.67568rem auto auto;
 }
 
 html body .btn-green:hover {
@@ -5539,8 +5507,8 @@ html body .btn-red {
   background-color: transparent;
 }
 
-html body .btn-red i {
-  font-size: 1.1rem;
+html body .btn-red i:empty {
+  margin: auto 0.67568rem auto auto;
 }
 
 html body .btn-red:hover {
@@ -5571,8 +5539,8 @@ html body .btn-orange {
   background-color: transparent;
 }
 
-html body .btn-orange i {
-  font-size: 1.1rem;
+html body .btn-orange i:empty {
+  margin: auto 0.67568rem auto auto;
 }
 
 html body .btn-orange:hover {
@@ -5603,8 +5571,8 @@ html body .btn-gray {
   background-color: transparent;
 }
 
-html body .btn-gray i {
-  font-size: 1.1rem;
+html body .btn-gray i:empty {
+  margin: auto 0.67568rem auto auto;
 }
 
 html body .btn-gray:hover {

@@ -5082,7 +5082,7 @@ html body .blck-cntr {
   text-align: center;
 }
 
-html body .clearfix::after {
+html body .clearfix::before, html body .clearfix::after {
   display: block;
   content: "";
   clear: both;
@@ -5093,6 +5093,18 @@ html body .fix-top {
   top: 0;
   left: 0;
   right: 0;
+}
+
+html body .flt-l {
+  float: left !important;
+}
+
+html body .flt-r {
+  float: right !important;
+}
+
+html body .flt-none {
+  float: none !important;
 }
 
 html body .h1,

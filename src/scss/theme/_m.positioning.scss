@@ -86,3 +86,14 @@
 .fix-top {
 	@include fixTop();
 }
+
+.flt-l{
+	@include flt-l();
+}
+
+.flt-r{
+	@include flt-r();
+}
+.flt-none{
+	@include flt-none();
+}

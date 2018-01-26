@@ -798,6 +798,10 @@ html body, html body * {
   }
 }
 
+html body .disp-blck {
+  display: block;
+}
+
 html body .hght-vh-0 {
   min-height: 0vh;
 }

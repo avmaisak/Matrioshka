@@ -1,4 +1,5 @@
-﻿//gulp
+﻿
+//gulp
 let 
 	gulp = require('gulp'),
 	cleanCSS = require('gulp-clean-css'),
@@ -7,12 +8,13 @@ let
 	gzip = require('gulp-gzip'),
 	clean = require('gulp-clean'),
 	dateFormat = require('dateformat'),
-	pkgInfo = require(pkgFile = './package')
+	pkgInfo = require(pkgFile = './package'),
+	sass = require('gulp-sass')
 ;
 
 //gulp common config options
 let gulpCfg = {
-	
+	scssDestRoot: "../../src/scss/",
 	scssDest: "../../src/scss/matrioshka.css",
 	distFileName:"matrioshka.min.css",
 	distFileDestination:"../../dist/css/",
@@ -43,6 +45,13 @@ gulp.task('clean', ()=> {
 
 gulp.task('copy_orig', ()=> {
 	return gulp.src(`../../src/scss/${gulpCfg.sourceFilesOrig[0]}`).pipe(gulp.dest(`${gulpCfg.distFileDestination}`));
+});
+
+gulp.task('sass', () => {
+	return gulp.src(`${gulpCfg.scssDestRoot}*.scss`)
+		.pipe(sass().on('error', sass.logError))
+		.pipe(gulp.dest(`${gulpCfg.scssDestRoot}`))
+	;
 });
 
 gulp.task('css', () => {
@@ -87,6 +96,7 @@ gulp.task('tarball-colors', () => {
 
 gulp.task('default', gulp.series([
 	'clean', 
+	'sass',
 	'css',
 	'css-colors',
 	'tarball',

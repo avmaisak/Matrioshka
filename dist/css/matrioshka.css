@@ -2584,6 +2584,18 @@ html body {
     margin-right: 0rem; }
   html body .mar-0 {
     margin: 0rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx0 {
+      padding-top: 0rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm0 {
+      padding-top: 0rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md0 {
+      padding-top: 0rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg0 {
+      padding-top: 0rem; } }
   html body .pad-top-1 {
     padding-top: 1rem; }
   html body .pad-btm-1 {
@@ -2604,6 +2616,18 @@ html body {
     margin-right: 1rem; }
   html body .mar-1 {
     margin: 1rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx1 {
+      padding-top: 1rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm1 {
+      padding-top: 1rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md1 {
+      padding-top: 1rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg1 {
+      padding-top: 1rem; } }
   html body .pad-top-2 {
     padding-top: 2rem; }
   html body .pad-btm-2 {
@@ -2624,6 +2648,18 @@ html body {
     margin-right: 2rem; }
   html body .mar-2 {
     margin: 2rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx2 {
+      padding-top: 2rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm2 {
+      padding-top: 2rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md2 {
+      padding-top: 2rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg2 {
+      padding-top: 2rem; } }
   html body .pad-top-3 {
     padding-top: 3rem; }
   html body .pad-btm-3 {
@@ -2644,6 +2680,18 @@ html body {
     margin-right: 3rem; }
   html body .mar-3 {
     margin: 3rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx3 {
+      padding-top: 3rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm3 {
+      padding-top: 3rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md3 {
+      padding-top: 3rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg3 {
+      padding-top: 3rem; } }
   html body .pad-top-4 {
     padding-top: 4rem; }
   html body .pad-btm-4 {
@@ -2664,6 +2712,18 @@ html body {
     margin-right: 4rem; }
   html body .mar-4 {
     margin: 4rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx4 {
+      padding-top: 4rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm4 {
+      padding-top: 4rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md4 {
+      padding-top: 4rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg4 {
+      padding-top: 4rem; } }
   html body .pad-top-5 {
     padding-top: 5rem; }
   html body .pad-btm-5 {
@@ -2684,6 +2744,18 @@ html body {
     margin-right: 5rem; }
   html body .mar-5 {
     margin: 5rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx5 {
+      padding-top: 5rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm5 {
+      padding-top: 5rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md5 {
+      padding-top: 5rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg5 {
+      padding-top: 5rem; } }
   html body .pad-top-6 {
     padding-top: 6rem; }
   html body .pad-btm-6 {
@@ -2704,6 +2776,18 @@ html body {
     margin-right: 6rem; }
   html body .mar-6 {
     margin: 6rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx6 {
+      padding-top: 6rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm6 {
+      padding-top: 6rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md6 {
+      padding-top: 6rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg6 {
+      padding-top: 6rem; } }
   html body .pad-top-7 {
     padding-top: 7rem; }
   html body .pad-btm-7 {
@@ -2724,6 +2808,18 @@ html body {
     margin-right: 7rem; }
   html body .mar-7 {
     margin: 7rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx7 {
+      padding-top: 7rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm7 {
+      padding-top: 7rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md7 {
+      padding-top: 7rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg7 {
+      padding-top: 7rem; } }
   html body .pad-top-8 {
     padding-top: 8rem; }
   html body .pad-btm-8 {
@@ -2744,6 +2840,18 @@ html body {
     margin-right: 8rem; }
   html body .mar-8 {
     margin: 8rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx8 {
+      padding-top: 8rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm8 {
+      padding-top: 8rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md8 {
+      padding-top: 8rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg8 {
+      padding-top: 8rem; } }
   html body .pad-top-9 {
     padding-top: 9rem; }
   html body .pad-btm-9 {
@@ -2764,6 +2872,18 @@ html body {
     margin-right: 9rem; }
   html body .mar-9 {
     margin: 9rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx9 {
+      padding-top: 9rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm9 {
+      padding-top: 9rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md9 {
+      padding-top: 9rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg9 {
+      padding-top: 9rem; } }
   html body .pad-top-10 {
     padding-top: 10rem; }
   html body .pad-btm-10 {
@@ -2784,6 +2904,18 @@ html body {
     margin-right: 10rem; }
   html body .mar-10 {
     margin: 10rem; }
+  @media screen and (max-width: 36rem) {
+    html body .pad-top-smx10 {
+      padding-top: 10rem; } }
+  @media screen and (min-width: 36rem) and (max-width: 62rem) {
+    html body .pad-top-sm10 {
+      padding-top: 10rem; } }
+  @media screen and (min-width: 62rem) and (max-width: 75rem) {
+    html body .pad-top-md10 {
+      padding-top: 10rem; } }
+  @media screen and (min-width: 75rem) {
+    html body .pad-top-lg10 {
+      padding-top: 10rem; } }
   html body .blck-cntr {
     display: block;
     margin: 0 auto;

@@ -69,6 +69,30 @@
 	.mar-#{$i} {
 		margin: $i + rem;
 	}
+
+	@include smx() {
+		.pad-top-smx#{$i} {
+			padding-top: $i + rem;
+		}
+	}
+
+	@include sm() {
+		.pad-top-sm#{$i} {
+			padding-top: $i + rem;
+		}
+	}
+
+	@include md() {
+		.pad-top-md#{$i} {
+			padding-top: $i + rem;
+		}
+	}
+
+	@include lg() {
+		.pad-top-lg#{$i} {
+			padding-top: $i + rem;
+		}
+	}
 }
 
 

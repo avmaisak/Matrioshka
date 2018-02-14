@@ -2586,16 +2586,24 @@ html body {
     margin: 0rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx0 {
-      padding-top: 0rem; } }
+      padding-top: 0rem; }
+    html body .pad-smx0 {
+      padding: 0rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm0 {
-      padding-top: 0rem; } }
+      padding-top: 0rem; }
+    html body .pad-sm0 {
+      padding: 0rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md0 {
-      padding-top: 0rem; } }
+      padding-top: 0rem; }
+    html body .pad-md0 {
+      padding: 0rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg0 {
-      padding-top: 0rem; } }
+      padding-top: 0rem; }
+    html body .pad-lg0 {
+      padding: 0rem; } }
   html body .pad-top-1 {
     padding-top: 1rem; }
   html body .pad-btm-1 {
@@ -2618,16 +2626,24 @@ html body {
     margin: 1rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx1 {
-      padding-top: 1rem; } }
+      padding-top: 1rem; }
+    html body .pad-smx1 {
+      padding: 1rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm1 {
-      padding-top: 1rem; } }
+      padding-top: 1rem; }
+    html body .pad-sm1 {
+      padding: 1rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md1 {
-      padding-top: 1rem; } }
+      padding-top: 1rem; }
+    html body .pad-md1 {
+      padding: 1rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg1 {
-      padding-top: 1rem; } }
+      padding-top: 1rem; }
+    html body .pad-lg1 {
+      padding: 1rem; } }
   html body .pad-top-2 {
     padding-top: 2rem; }
   html body .pad-btm-2 {
@@ -2650,16 +2666,24 @@ html body {
     margin: 2rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx2 {
-      padding-top: 2rem; } }
+      padding-top: 2rem; }
+    html body .pad-smx2 {
+      padding: 2rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm2 {
-      padding-top: 2rem; } }
+      padding-top: 2rem; }
+    html body .pad-sm2 {
+      padding: 2rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md2 {
-      padding-top: 2rem; } }
+      padding-top: 2rem; }
+    html body .pad-md2 {
+      padding: 2rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg2 {
-      padding-top: 2rem; } }
+      padding-top: 2rem; }
+    html body .pad-lg2 {
+      padding: 2rem; } }
   html body .pad-top-3 {
     padding-top: 3rem; }
   html body .pad-btm-3 {
@@ -2682,16 +2706,24 @@ html body {
     margin: 3rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx3 {
-      padding-top: 3rem; } }
+      padding-top: 3rem; }
+    html body .pad-smx3 {
+      padding: 3rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm3 {
-      padding-top: 3rem; } }
+      padding-top: 3rem; }
+    html body .pad-sm3 {
+      padding: 3rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md3 {
-      padding-top: 3rem; } }
+      padding-top: 3rem; }
+    html body .pad-md3 {
+      padding: 3rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg3 {
-      padding-top: 3rem; } }
+      padding-top: 3rem; }
+    html body .pad-lg3 {
+      padding: 3rem; } }
   html body .pad-top-4 {
     padding-top: 4rem; }
   html body .pad-btm-4 {
@@ -2714,16 +2746,24 @@ html body {
     margin: 4rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx4 {
-      padding-top: 4rem; } }
+      padding-top: 4rem; }
+    html body .pad-smx4 {
+      padding: 4rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm4 {
-      padding-top: 4rem; } }
+      padding-top: 4rem; }
+    html body .pad-sm4 {
+      padding: 4rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md4 {
-      padding-top: 4rem; } }
+      padding-top: 4rem; }
+    html body .pad-md4 {
+      padding: 4rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg4 {
-      padding-top: 4rem; } }
+      padding-top: 4rem; }
+    html body .pad-lg4 {
+      padding: 4rem; } }
   html body .pad-top-5 {
     padding-top: 5rem; }
   html body .pad-btm-5 {
@@ -2746,16 +2786,24 @@ html body {
     margin: 5rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx5 {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+    html body .pad-smx5 {
+      padding: 5rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm5 {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+    html body .pad-sm5 {
+      padding: 5rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md5 {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+    html body .pad-md5 {
+      padding: 5rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg5 {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+    html body .pad-lg5 {
+      padding: 5rem; } }
   html body .pad-top-6 {
     padding-top: 6rem; }
   html body .pad-btm-6 {
@@ -2778,16 +2826,24 @@ html body {
     margin: 6rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx6 {
-      padding-top: 6rem; } }
+      padding-top: 6rem; }
+    html body .pad-smx6 {
+      padding: 6rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm6 {
-      padding-top: 6rem; } }
+      padding-top: 6rem; }
+    html body .pad-sm6 {
+      padding: 6rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md6 {
-      padding-top: 6rem; } }
+      padding-top: 6rem; }
+    html body .pad-md6 {
+      padding: 6rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg6 {
-      padding-top: 6rem; } }
+      padding-top: 6rem; }
+    html body .pad-lg6 {
+      padding: 6rem; } }
   html body .pad-top-7 {
     padding-top: 7rem; }
   html body .pad-btm-7 {
@@ -2810,16 +2866,24 @@ html body {
     margin: 7rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx7 {
-      padding-top: 7rem; } }
+      padding-top: 7rem; }
+    html body .pad-smx7 {
+      padding: 7rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm7 {
-      padding-top: 7rem; } }
+      padding-top: 7rem; }
+    html body .pad-sm7 {
+      padding: 7rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md7 {
-      padding-top: 7rem; } }
+      padding-top: 7rem; }
+    html body .pad-md7 {
+      padding: 7rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg7 {
-      padding-top: 7rem; } }
+      padding-top: 7rem; }
+    html body .pad-lg7 {
+      padding: 7rem; } }
   html body .pad-top-8 {
     padding-top: 8rem; }
   html body .pad-btm-8 {
@@ -2842,16 +2906,24 @@ html body {
     margin: 8rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx8 {
-      padding-top: 8rem; } }
+      padding-top: 8rem; }
+    html body .pad-smx8 {
+      padding: 8rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm8 {
-      padding-top: 8rem; } }
+      padding-top: 8rem; }
+    html body .pad-sm8 {
+      padding: 8rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md8 {
-      padding-top: 8rem; } }
+      padding-top: 8rem; }
+    html body .pad-md8 {
+      padding: 8rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg8 {
-      padding-top: 8rem; } }
+      padding-top: 8rem; }
+    html body .pad-lg8 {
+      padding: 8rem; } }
   html body .pad-top-9 {
     padding-top: 9rem; }
   html body .pad-btm-9 {
@@ -2874,16 +2946,24 @@ html body {
     margin: 9rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx9 {
-      padding-top: 9rem; } }
+      padding-top: 9rem; }
+    html body .pad-smx9 {
+      padding: 9rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm9 {
-      padding-top: 9rem; } }
+      padding-top: 9rem; }
+    html body .pad-sm9 {
+      padding: 9rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md9 {
-      padding-top: 9rem; } }
+      padding-top: 9rem; }
+    html body .pad-md9 {
+      padding: 9rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg9 {
-      padding-top: 9rem; } }
+      padding-top: 9rem; }
+    html body .pad-lg9 {
+      padding: 9rem; } }
   html body .pad-top-10 {
     padding-top: 10rem; }
   html body .pad-btm-10 {
@@ -2906,16 +2986,24 @@ html body {
     margin: 10rem; }
   @media screen and (max-width: 36rem) {
     html body .pad-top-smx10 {
-      padding-top: 10rem; } }
+      padding-top: 10rem; }
+    html body .pad-smx10 {
+      padding: 10rem; } }
   @media screen and (min-width: 36rem) and (max-width: 62rem) {
     html body .pad-top-sm10 {
-      padding-top: 10rem; } }
+      padding-top: 10rem; }
+    html body .pad-sm10 {
+      padding: 10rem; } }
   @media screen and (min-width: 62rem) and (max-width: 75rem) {
     html body .pad-top-md10 {
-      padding-top: 10rem; } }
+      padding-top: 10rem; }
+    html body .pad-md10 {
+      padding: 10rem; } }
   @media screen and (min-width: 75rem) {
     html body .pad-top-lg10 {
-      padding-top: 10rem; } }
+      padding-top: 10rem; }
+    html body .pad-lg10 {
+      padding: 10rem; } }
   html body .blck-cntr {
     display: block;
     margin: 0 auto;

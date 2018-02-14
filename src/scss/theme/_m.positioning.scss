@@ -74,11 +74,18 @@
 		.pad-top-smx#{$i} {
 			padding-top: $i + rem;
 		}
+
+		.pad-smx#{$i} {
+			padding: $i + rem;
+		}
 	}
 
 	@include sm() {
 		.pad-top-sm#{$i} {
 			padding-top: $i + rem;
+		}
+		.pad-sm#{$i} {
+			padding: $i + rem;
 		}
 	}
 
@@ -86,34 +93,36 @@
 		.pad-top-md#{$i} {
 			padding-top: $i + rem;
 		}
+
+		.pad-md#{$i} {
+			padding: $i + rem;
+		}
 	}
 
 	@include lg() {
 		.pad-top-lg#{$i} {
 			padding-top: $i + rem;
 		}
+		.pad-lg#{$i} {
+			padding: $i + rem;
+		}
 	}
 }
-
 
 .blck-cntr {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 }
-
 .clearfix {
 	@include clearfix();
 }
-
 .fix-top {
 	@include fixTop();
 }
-
 .flt-l{
 	@include flt-l();
 }
-
 .flt-r{
 	@include flt-r();
 }

@@ -3344,3 +3344,7 @@ html body {
     box-shadow: 0 2px 100px rgba(0, 0, 0, 0.3); }
   html body .circle {
     border-radius: 100%; }
+  html body .panel {
+    border-radius: 0.30902rem;
+    padding: 0.67568rem;
+    background: #FFF; }

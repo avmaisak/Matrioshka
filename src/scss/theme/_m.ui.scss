@@ -7,3 +7,9 @@
 .circle {
 	border-radius: 100%;
 }
+
+.panel {
+	border-radius: $theme-brd-radius;
+	padding: $theme-default-padding;
+	background: $clr-safest-FFF;
+}

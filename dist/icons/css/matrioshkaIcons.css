@@ -66,4 +66,8 @@ Glyphs list
 
 .mi-qrcode:before {
 	content: '\ea09';
+}
+
+.mi-telephone:before {
+	content: '\ea0a';
 }

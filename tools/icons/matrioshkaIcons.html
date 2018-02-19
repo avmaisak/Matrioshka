@@ -9,13 +9,13 @@
 </head>
 <body>
 
-			<% _.each(glyphs, function(icon){ %>
-				<div class="pad-1 txt-cntr disp-inline-blck">
-					<i class='mi-<%= icon.name %>' style="padding:10px; font-size:40px"></i>
-					<br />
-					<small>mi-<%= icon.name %></small>
-				</div>
-			<% }) %>
+	<% _.each(glyphs, function(icon){ %>
+		<div class="pad-1 txt-cntr disp-inline-blck">
+			<i class='mi-<%= icon.name %> pad-1 txt-sz3' ></i>
+			<br />
+			<small>mi-<%= icon.name %></small>
+		</div>
+	<% }) %>
 
 </body>
 </html>

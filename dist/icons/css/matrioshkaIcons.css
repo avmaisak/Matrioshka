@@ -44,22 +44,26 @@ Glyphs list
 	content: '\ea03';
 }
 
-.mi-heart-out:before {
+.mi-grid:before {
 	content: '\ea04';
 }
 
-.mi-heart:before {
+.mi-heart-out:before {
 	content: '\ea05';
 }
 
-.mi-home:before {
+.mi-heart:before {
 	content: '\ea06';
 }
 
-.mi-instagram:before {
+.mi-home:before {
 	content: '\ea07';
 }
 
-.mi-qrcode:before {
+.mi-instagram:before {
 	content: '\ea08';
+}
+
+.mi-qrcode:before {
+	content: '\ea09';
 }

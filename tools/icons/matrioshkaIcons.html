@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" href="https://rawgit.com/rus-bit/Matrioshka/master/dist/css/min/matrioshka.min.css" />
 	<title><%= fontName %></title>
 	<link rel="stylesheet" href="css/<%= fontName %>.min.css" />
 </head>
 <body>
-	<div >
 
 			<% _.each(glyphs, function(icon){ %>
-				<i class='mi-<%= icon.name %>'></i>
+				<div class="pad-1 txt-cntr cl">
+					<i class='mi-<%= icon.name %>' style="padding:10px; font-size:40px"></i>
+					<br />
+					<small>mi-<%= icon.name %></small>
+				</div>
 			<% }) %>
 
-	</div>
 </body>
 </html>

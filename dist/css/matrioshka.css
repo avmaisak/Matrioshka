@@ -542,6 +542,8 @@ html body {
   @media screen and (min-width: 75rem) {
     html body .hide-lg {
       display: none; } }
+  html body .disp-inline-blck {
+    display: inline-block; }
   html body .disp-blck {
     display: block; }
   html body .hght-vh-0 {

@@ -9,7 +9,9 @@ let
 	clean = require('gulp-clean'),
 	dateFormat = require('dateformat'),
 	pkgInfo = require(pkgFile = './package'),
-	sass = require('gulp-sass')
+	sass = require('gulp-sass'),
+	consolidate = require('gulp-consolidate'),
+	iconfont = require('gulp-iconfont')
 ;
 
 //gulp common config options
@@ -93,6 +95,38 @@ gulp.task('tarball-colors', () => {
 		.pipe(gzip())
 		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distTarBallDestinationPrefix}`));
 });
+
+gulp.task('iconfont', function () {
+	
+	return gulp.src('../../src/icons/svg/*.svg')
+		 .pipe(iconfont({
+			 fontName: 'iconfont',
+			 formats: ['ttf', 'eot', 'woff', 'woff2','svg'],
+			 appendCodepoints: true,
+			 appendUnicode: false,
+			 normalize: true,
+			 fontHeight: 1001,
+			 centerHorizontally: true
+		 }))
+		 .on('glyphs', function (glyphs, options) {
+			 gulp.src('../../dist/icons/css/iconfont.css')
+				 .pipe(consolidate('underscore', {
+					 glyphs: glyphs,
+					 fontName: options.fontName,
+					 fontDate: new Date().getTime()
+				 }))
+				 .pipe(gulp.dest('../../dist/icons/css/'));
+ 
+			 gulp.src('../../dist/icons/index.html')
+				 .pipe(consolidate('underscore', {
+					 glyphs: glyphs,
+					 fontName: options.fontName
+				 }))
+				 .pipe(gulp.dest('../../dist/icons/'));
+		 })
+		 .pipe(gulp.dest('../../dist/icons/fonts/'));
+ });
+
 
 gulp.task('default', gulp.series([
 	'clean', 

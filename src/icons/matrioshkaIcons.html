@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>matrioshkaIcons</title>
+	<link rel="stylesheet" href="css/matrioshkaIcons.css" />
+</head>
+<body>
+	<div >
+
+			<% _.each(glyphs, function(icon){ %>
+				<i class='icon-<%= icon.name %>'></i>
+			<% }) %>
+
+	</div>
+</body>
+</html>

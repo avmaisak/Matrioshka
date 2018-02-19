@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title><%= fontName %></title>
+	<link rel="stylesheet" href="css/<%= fontName %>.min.css" />
+</head>
+<body>
+	<div >
+
+			<% _.each(glyphs, function(icon){ %>
+				<i class='icon-<%= icon.name %>'></i>
+			<% }) %>
+
+	</div>
+</body>
+</html>

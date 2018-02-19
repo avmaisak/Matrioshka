@@ -45,6 +45,11 @@ gulp.task('clean', ()=> {
 		.pipe(clean({force: true}));
 });
 
+gulp.task('clean-icons', ()=> {
+	return gulp.src('../../dist/icons/*')
+		.pipe(clean({force: true}));
+});
+
 gulp.task('copy_orig', ()=> {
 	return gulp.src(`../../src/scss/${gulpCfg.sourceFilesOrig[0]}`).pipe(gulp.dest(`${gulpCfg.distFileDestination}`));
 });
@@ -70,6 +75,14 @@ gulp.task('css-colors', () => {
 		.pipe(header(gulpCfg.descriptionHeader))
 		.pipe(rename("matrioshka.colors.min.css"))
 		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}`));
+});
+
+gulp.task('css-icons-min', () => {
+	return gulp.src("../../dist/icons/css/matrioshkaIcons.css")
+		.pipe(cleanCSS())
+		.pipe(header(gulpCfg.descriptionHeader))
+		.pipe(rename("matrioshkaIcons.min.css"))
+		.pipe(gulp.dest('../../dist/icons/css/'));
 });
 
 gulp.task('tarball', () => {
@@ -100,7 +113,7 @@ gulp.task('iconfont', function () {
 	
 	return gulp.src('../../src/icons/svg/*.svg')
 		 .pipe(iconfont({
-			 fontName: 'iconfont',
+			 fontName: 'matrioshkaIcons',
 			 formats: ['ttf', 'eot', 'woff', 'woff2','svg'],
 			 appendCodepoints: true,
 			 appendUnicode: false,
@@ -109,7 +122,7 @@ gulp.task('iconfont', function () {
 			 centerHorizontally: true
 		 }))
 		 .on('glyphs', function (glyphs, options) {
-			 gulp.src('../../dist/icons/css/iconfont.css')
+			 gulp.src('../../tools/icons/matrioshkaIcons.css')
 				 .pipe(consolidate('underscore', {
 					 glyphs: glyphs,
 					 fontName: options.fontName,
@@ -117,7 +130,7 @@ gulp.task('iconfont', function () {
 				 }))
 				 .pipe(gulp.dest('../../dist/icons/css/'));
  
-			 gulp.src('../../dist/icons/index.html')
+			 gulp.src('../../tools/icons/matrioshkaIcons.html')
 				 .pipe(consolidate('underscore', {
 					 glyphs: glyphs,
 					 fontName: options.fontName
@@ -127,8 +140,24 @@ gulp.task('iconfont', function () {
 		 .pipe(gulp.dest('../../dist/icons/fonts/'));
  });
 
+ gulp.task('default', gulp.series([
+	'clean', 
+	'sass',
+	'css',
+	'css-colors',
+	'tarball',
+	'tarball-colors',
+	'copy_orig'
+]));
 
-gulp.task('default', gulp.series([
+
+gulp.task('make-icons', gulp.series([
+	'clean-icons', 
+	'iconfont',
+	'css-icons-min'
+]));
+
+ gulp.task('default', gulp.series([
 	'clean', 
 	'sass',
 	'css',

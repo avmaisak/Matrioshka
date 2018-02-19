@@ -11,8 +11,8 @@
 }
 
 
-[class^='icon-']:before,
-[class*=' icon-']:before {
+[class^='mi-']:before,
+[class*=' mi-']:before {
 	font-family: '<%= fontName %>';
 	display: inline-block;
 	vertical-align: middle;

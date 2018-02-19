@@ -11,7 +11,8 @@ let
 	pkgInfo = require(pkgFile = './package'),
 	sass = require('gulp-sass'),
 	consolidate = require('gulp-consolidate'),
-	iconfont = require('gulp-iconfont')
+	iconfont = require('gulp-iconfont'),
+	svgSprite = require('gulp-svg-sprite')
 ;
 
 //gulp common config options
@@ -110,7 +111,6 @@ gulp.task('tarball-colors', () => {
 });
 
 gulp.task('iconfont', function () {
-	
 	return gulp.src('../../src/icons/svg/*.svg')
 		 .pipe(iconfont({
 			 fontName: 'matrioshkaIcons',
@@ -138,18 +138,7 @@ gulp.task('iconfont', function () {
 				 .pipe(gulp.dest('../../dist/icons/'));
 		 })
 		 .pipe(gulp.dest('../../dist/icons/fonts/'));
- });
-
- gulp.task('default', gulp.series([
-	'clean', 
-	'sass',
-	'css',
-	'css-colors',
-	'tarball',
-	'tarball-colors',
-	'copy_orig'
-]));
-
+});
 
 gulp.task('make-icons', gulp.series([
 	'clean-icons', 
@@ -157,12 +146,41 @@ gulp.task('make-icons', gulp.series([
 	'css-icons-min'
 ]));
 
- gulp.task('default', gulp.series([
+gulp.task('make-icon-sprite', function (){
+// More complex configuration example
+	config= {
+		shape: {
+			dimension: {			// Set maximum dimensions
+				maxWidth: 64,
+				maxHeight: 64
+			},
+			spacing: {			// Add padding
+				padding: 20
+			},
+		},
+		mode: {
+			view: {			// Activate the «view» mode
+				bust: false,
+				render: {
+					scss: false		// Activate Sass output (with default options)
+				}
+			},
+			symbol: false		// Activate the «symbol» mode
+		}
+	};
+
+	gulp.src('**/*.svg',{cwd: '../../src/icons/svg'})
+		.pipe(svgSprite(config))
+		.pipe(gulp.dest('../../dist/icons/sprite/'));
+});
+
+gulp.task('default', gulp.series([
 	'clean', 
 	'sass',
 	'css',
 	'css-colors',
 	'tarball',
 	'tarball-colors',
-	'copy_orig'
+	'copy_orig',
+	'make-icons'
 ]));

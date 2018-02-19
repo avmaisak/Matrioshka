@@ -5,9 +5,9 @@
 	Source code: https://github.com/rus-bit/Matrioshka
 	Home: https://rus-bit.com/matrioshka/
 	Version: 0.1.21
-	Build date 2018.02.19 01:13
+	Build date 2018.02.19 02:01
 	License:Apache License Version 2.0
 	Copyright (c) 2018 RusBit LTD
 	Author: RusBit
 	*/
-	@font-face{font-family:matrioshkaIcons;src:url(../fonts/matrioshkaIcons.eot);src:url(../fonts/matrioshkaIcons.eot?#iefix) format('embedded-opentype'),url(../fonts/matrioshkaIcons.woff2) format('woff2'),url(../fonts/matrioshkaIcons.woff) format('woff'),url(../fonts/matrioshkaIcons.ttf) format('truetype'),url(../fonts/matrioshkaIcons.svg) format("svg");font-weight:400;font-style:normal}[class*=' icon-']:before,[class^=icon-]:before{font-family:matrioshkaIcons;display:inline-block;vertical-align:middle;line-height:1;font-weight:400;font-style:normal;speak:none;text-decoration:inherit;font-size:inherit;text-transform:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-exclamation:before{content:'\ea01'}.icon-heart:before{content:'\ea02'}
+	@font-face{font-family:matrioshkaIcons;src:url(../fonts/matrioshkaIcons.eot);src:url(../fonts/matrioshkaIcons.eot?#iefix) format('embedded-opentype'),url(../fonts/matrioshkaIcons.woff2) format('woff2'),url(../fonts/matrioshkaIcons.woff) format('woff'),url(../fonts/matrioshkaIcons.ttf) format('truetype'),url(../fonts/matrioshkaIcons.svg) format("svg");font-weight:400;font-style:normal}[class*=' mi-']:before,[class^=mi-]:before{font-family:matrioshkaIcons;display:inline-block;vertical-align:middle;line-height:1;font-weight:400;font-style:normal;speak:none;text-decoration:inherit;font-size:inherit;text-transform:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-exclamation:before{content:'\ea01'}.icon-heart:before{content:'\ea02'}

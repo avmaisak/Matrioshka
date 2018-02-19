@@ -34,4 +34,8 @@ Glyphs list
 
 .icon-exclamation:before {
 	content: '\ea01';
+}
+
+.icon-heart:before {
+	content: '\ea02';
 }

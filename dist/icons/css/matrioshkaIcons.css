@@ -32,10 +32,18 @@
 Glyphs list
 */
 
-.icon-exclamation:before {
+.mi-exclamation:before {
 	content: '\ea01';
 }
 
-.icon-heart:before {
+.mi-github:before {
 	content: '\ea02';
+}
+
+.mi-heart:before {
+	content: '\ea03';
+}
+
+.mi-instagram:before {
+	content: '\ea04';
 }

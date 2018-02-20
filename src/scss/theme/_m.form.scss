@@ -97,8 +97,6 @@
 
 .btn {
 	@include btn($theme-main-color, $theme-main-color-dark,$clr-white);
-
-	
 }
 
 .btn-inverted {
@@ -120,7 +118,6 @@
 .btn-gray {
 	@include btn($theme-default-color,$theme-default-color-light,$theme-default-color);
 }
-
 
 .btn-circle {
 	width: $m_unit_def * 3;

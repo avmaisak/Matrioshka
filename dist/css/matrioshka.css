@@ -176,6 +176,12 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
+  input[disabled],
+  button[disabled],
+  select[disabled],
+  optgroup[disabled],
+  textarea[disabled] {
+    cursor: not-allowed; }
 
 button,
 input {
@@ -183,7 +189,8 @@ input {
 
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+  cursor: pointer; }
 
 button,
 html [type="button"],

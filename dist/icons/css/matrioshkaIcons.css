@@ -36,42 +36,50 @@ Glyphs list
 	content: '\ea01';
 }
 
-.mi-envelope-out:before {
+.mi-close:before {
 	content: '\ea02';
 }
 
-.mi-exclamation:before {
+.mi-close2:before {
 	content: '\ea03';
 }
 
-.mi-github:before {
+.mi-envelope-out:before {
 	content: '\ea04';
 }
 
-.mi-grid:before {
+.mi-exclamation:before {
 	content: '\ea05';
 }
 
-.mi-heart-out:before {
+.mi-github:before {
 	content: '\ea06';
 }
 
-.mi-heart:before {
+.mi-grid:before {
 	content: '\ea07';
 }
 
-.mi-home:before {
+.mi-heart-out:before {
 	content: '\ea08';
 }
 
-.mi-instagram:before {
+.mi-heart:before {
 	content: '\ea09';
 }
 
-.mi-qrcode:before {
+.mi-home:before {
 	content: '\ea0a';
 }
 
-.mi-telephone:before {
+.mi-instagram:before {
 	content: '\ea0b';
+}
+
+.mi-qrcode:before {
+	content: '\ea0c';
+}
+
+.mi-telephone:before {
+	content: '\ea0d';
 }

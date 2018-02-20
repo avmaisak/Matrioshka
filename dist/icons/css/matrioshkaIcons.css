@@ -32,42 +32,46 @@
 Glyphs list
 */
 
-.mi-envelope-out:before {
+.mi-3dprinter:before {
 	content: '\ea01';
 }
 
-.mi-exclamation:before {
+.mi-envelope-out:before {
 	content: '\ea02';
 }
 
-.mi-github:before {
+.mi-exclamation:before {
 	content: '\ea03';
 }
 
-.mi-grid:before {
+.mi-github:before {
 	content: '\ea04';
 }
 
-.mi-heart-out:before {
+.mi-grid:before {
 	content: '\ea05';
 }
 
-.mi-heart:before {
+.mi-heart-out:before {
 	content: '\ea06';
 }
 
-.mi-home:before {
+.mi-heart:before {
 	content: '\ea07';
 }
 
-.mi-instagram:before {
+.mi-home:before {
 	content: '\ea08';
 }
 
-.mi-qrcode:before {
+.mi-instagram:before {
 	content: '\ea09';
 }
 
-.mi-telephone:before {
+.mi-qrcode:before {
 	content: '\ea0a';
+}
+
+.mi-telephone:before {
+	content: '\ea0b';
 }

@@ -44,42 +44,50 @@ Glyphs list
 	content: '\ea03';
 }
 
-.mi-envelope-out:before {
+.mi-download-cloud:before {
 	content: '\ea04';
 }
 
-.mi-exclamation:before {
+.mi-envelope-out:before {
 	content: '\ea05';
 }
 
-.mi-github:before {
+.mi-exclamation:before {
 	content: '\ea06';
 }
 
-.mi-grid:before {
+.mi-github:before {
 	content: '\ea07';
 }
 
-.mi-heart-out:before {
+.mi-grid:before {
 	content: '\ea08';
 }
 
-.mi-heart:before {
+.mi-heart-out:before {
 	content: '\ea09';
 }
 
-.mi-home:before {
+.mi-heart:before {
 	content: '\ea0a';
 }
 
-.mi-instagram:before {
+.mi-home:before {
 	content: '\ea0b';
 }
 
-.mi-qrcode:before {
+.mi-home2:before {
 	content: '\ea0c';
 }
 
-.mi-telephone:before {
+.mi-instagram:before {
 	content: '\ea0d';
+}
+
+.mi-qrcode:before {
+	content: '\ea0e';
+}
+
+.mi-telephone:before {
+	content: '\ea0f';
 }

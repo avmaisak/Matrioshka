@@ -78,6 +78,14 @@ gulp.task('css-colors', () => {
 		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}`));
 });
 
+gulp.task('css-reset', () => {
+	return gulp.src("../../src/scss/matrioshka.reset.css")
+		.pipe(cleanCSS())
+		.pipe(header(gulpCfg.descriptionHeader))
+		.pipe(rename("matrioshka.reset.min.css"))
+		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}`));
+});
+
 gulp.task('css-icons-min', () => {
 	return gulp.src("../../dist/icons/css/matrioshkaIcons.css")
 		.pipe(cleanCSS())
@@ -179,6 +187,7 @@ gulp.task('default', gulp.series([
 	'sass',
 	'css',
 	'css-colors',
+	'css-reset',
 	'tarball',
 	'tarball-colors',
 	'copy_orig',

@@ -117,6 +117,17 @@ gulp.task('tarball-colors', () => {
 		.pipe(gzip())
 		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distTarBallDestinationPrefix}`));
 });
+gulp.task('tarball-reset', () => {
+
+	gzip({ 
+		append: true,
+		gzipOptions: { level: 9 }
+	});
+
+	return gulp.src(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}matrioshka.reset.min.css`)
+		.pipe(gzip())
+		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distTarBallDestinationPrefix}`));
+});
 
 gulp.task('iconfont', function () {
 	return gulp.src('../../src/icons/svg/*.svg')
@@ -190,6 +201,7 @@ gulp.task('default', gulp.series([
 	'css-reset',
 	'tarball',
 	'tarball-colors',
+	'tarball-reset',
 	'copy_orig',
 	'make-icons'
 ]));

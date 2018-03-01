@@ -12,8 +12,7 @@ let
 	sass = require('gulp-sass'),
 	consolidate = require('gulp-consolidate'),
 	iconfont = require('gulp-iconfont'),
-	svgSprite = require('gulp-svg-sprite'),
-	inject = require('gulp-inject')
+	svgSprite = require('gulp-svg-sprite')
 ;
 
 //gulp common config options

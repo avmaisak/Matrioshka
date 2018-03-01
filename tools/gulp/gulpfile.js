@@ -12,17 +12,14 @@ let
 	sass = require('gulp-sass'),
 	consolidate = require('gulp-consolidate'),
 	iconfont = require('gulp-iconfont'),
-	svgSprite = require('gulp-svg-sprite')
+	svgSprite = require('gulp-svg-sprite'),
+	inject = require('gulp-inject')
 ;
 
 //gulp common config options
 let gulpCfg = {
 	scssDestRoot: "../../src/scss/",
-	scssDest: "../../src/scss/matrioshka.css",
-	distFileName:"matrioshka.min.css",
 	distFileDestination:"../../dist/css/",
-	distTarBallDestinationPrefix:"tar/",
-	distMinDestinationPrefix:"min/",
 	descriptionHeader:`
 	/*
 	Matrioshka. 
@@ -34,9 +31,7 @@ let gulpCfg = {
 	License:Apache License Version 2.0
 	Copyright (c) 2018 RusBit LTD
 	Author: ${ pkgInfo.author }
-	*/
-	`,
-	sourceFilesOrig:['*.css','*.css.map'],
+	*/`
 };
 
 console.log('\x1Bc');
@@ -55,10 +50,6 @@ gulp.task('clean-all', gulp.series([
 	'clean', 
 	'clean-icons'
 ]));
-
-gulp.task('copy_orig', ()=> {
-	return gulp.src(`../../src/scss/${gulpCfg.sourceFilesOrig[0]}`).pipe(gulp.dest(`${gulpCfg.distFileDestination}`));
-});
 
 gulp.task('sass', () => {
 	return gulp.src(`${gulpCfg.scssDestRoot}*.scss`)
@@ -163,7 +154,7 @@ gulp.task('make-icon-sprite', function (){
 		}
 	};
 
-	gulp.src('**/*.svg',{cwd: '../../src/icons/svg'})
+	return  gulp.src('**/*.svg',{cwd: '../../src/icons/svg'})
 		.pipe(svgSprite(config))
 		.pipe(gulp.dest('../../dist/icons/sprite/'));
 });
@@ -174,5 +165,6 @@ gulp.task('default', gulp.series([
 	'css-all',
 	'css-all-min',
 	'css-all-tarball',
-	'make-icons'
+	'make-icons',
+	'make-icon-sprite'
 ]));

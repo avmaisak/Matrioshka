@@ -51,6 +51,11 @@ gulp.task('clean-icons', ()=> {
 		.pipe(clean({force: true}));
 });
 
+gulp.task('clean-all', gulp.series([
+	'clean', 
+	'clean-icons'
+]));
+
 gulp.task('copy_orig', ()=> {
 	return gulp.src(`../../src/scss/${gulpCfg.sourceFilesOrig[0]}`).pipe(gulp.dest(`${gulpCfg.distFileDestination}`));
 });
@@ -62,28 +67,21 @@ gulp.task('sass', () => {
 	;
 });
 
-gulp.task('css', () => {
-	return gulp.src(gulpCfg.scssDest)
-		.pipe(cleanCSS())
+gulp.task('css-all', () => {
+	return gulp.src("../../src/scss/*.css")
 		.pipe(header(gulpCfg.descriptionHeader))
-		.pipe(rename(gulpCfg.distFileName))
-		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}`));
+		.pipe(gulp.dest(`../../dist/css`));
 });
 
-gulp.task('css-colors', () => {
-	return gulp.src("../../src/scss/matrioshka.colors.css")
+gulp.task('css-all-min', () => {
+	return gulp.src("../../src/scss/*.css")
 		.pipe(cleanCSS())
 		.pipe(header(gulpCfg.descriptionHeader))
-		.pipe(rename("matrioshka.colors.min.css"))
-		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}`));
-});
-
-gulp.task('css-reset', () => {
-	return gulp.src("../../src/scss/matrioshka.reset.css")
-		.pipe(cleanCSS())
-		.pipe(header(gulpCfg.descriptionHeader))
-		.pipe(rename("matrioshka.reset.min.css"))
-		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}`));
+		.pipe(rename({
+			suffix: ".min",
+			extname: ".css"
+		}))
+		.pipe(gulp.dest(`../../dist/css/min`));
 });
 
 gulp.task('css-icons-min', () => {
@@ -94,39 +92,16 @@ gulp.task('css-icons-min', () => {
 		.pipe(gulp.dest('../../dist/icons/css/'));
 });
 
-gulp.task('tarball', () => {
+gulp.task('css-all-tarball', () => {
 
 	gzip({ 
 		append: true,
 		gzipOptions: { level: 9 }
 	});
 
-	return gulp.src(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}${gulpCfg.distFileName}`)
+	return gulp.src("../../dist/css/min/*.css")
 		.pipe(gzip())
-		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distTarBallDestinationPrefix}`));
-});
-
-gulp.task('tarball-colors', () => {
-
-	gzip({ 
-		append: true,
-		gzipOptions: { level: 9 }
-	});
-
-	return gulp.src(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}matrioshka.colors.min.css`)
-		.pipe(gzip())
-		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distTarBallDestinationPrefix}`));
-});
-gulp.task('tarball-reset', () => {
-
-	gzip({ 
-		append: true,
-		gzipOptions: { level: 9 }
-	});
-
-	return gulp.src(`${gulpCfg.distFileDestination}${gulpCfg.distMinDestinationPrefix}matrioshka.reset.min.css`)
-		.pipe(gzip())
-		.pipe(gulp.dest(`${gulpCfg.distFileDestination}${gulpCfg.distTarBallDestinationPrefix}`));
+		.pipe(gulp.dest(`../../dist/css/tar/`));
 });
 
 gulp.task('iconfont', function () {
@@ -194,14 +169,10 @@ gulp.task('make-icon-sprite', function (){
 });
 
 gulp.task('default', gulp.series([
-	'clean', 
+	'clean-all', 
 	'sass',
-	'css',
-	'css-colors',
-	'css-reset',
-	'tarball',
-	'tarball-colors',
-	'tarball-reset',
-	'copy_orig',
+	'css-all',
+	'css-all-min',
+	'css-all-tarball',
 	'make-icons'
 ]));

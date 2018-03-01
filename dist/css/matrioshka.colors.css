@@ -1,4 +1,16 @@
-.clr-red-50 *,
+
+	/*
+	Matrioshka. 
+	simple useful HTML5/CSS3 lightweight skeleton
+	Source code: https://github.com/rus-bit/Matrioshka
+	Home: https://rus-bit.com/matrioshka/
+	Version: 0.1.25
+	Build date 2018.03.01 09:59
+	License:Apache License Version 2.0
+	Copyright (c) 2018 RusBit LTD
+	Author: RusBit
+	*/
+	.clr-red-50 *,
 .clr-red-50 *:hover,
 .clr-red-50 {
   color: #ffebee; }

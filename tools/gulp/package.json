@@ -1,6 +1,6 @@
 {
   "name": "matrioshka",
-  "version": "0.1.21",
+  "version": "0.1.25",
   "description": "simple useful HTML5/CSS3 lightweight skeleton",
   "main": "index.js",
   "dependencies": {

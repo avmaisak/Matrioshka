@@ -30,7 +30,7 @@ BlinkMacSystemFont,
 // Emoji fonts
 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 // stylelint-disable value-keyword-case
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-monospace: "SFMono-Regular", "Menlo, Monaco", "Consolas", "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 $font-size-base: $m_unit_def !default; // Assumes the browser default, typically `16px`
 $font-weight-light: $m_unit_wl !default;

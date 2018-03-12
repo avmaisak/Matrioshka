@@ -1,0 +1,17 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.animation {
+	@include duration(1s);
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+}
+.animation-fade-in {
+	@include animation-name(fadeIn);
+}

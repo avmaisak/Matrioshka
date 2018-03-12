@@ -5,7 +5,7 @@
 	Source code: https://github.com/rus-bit/Matrioshka
 	Home: https://rus-bit.com/matrioshka/
 	Version: 0.1.25
-	Build date 2018.03.12 11:14
+	Build date 2018.03.12 11:30
 	License:Apache License Version 2.0
 	Copyright (c) 2018 RusBit LTD
 	Author: RusBit
@@ -4617,3 +4617,25 @@ table {
 .panel {
   border-radius: 0.30902rem;
   background: #FFF; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animation {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both; }
+
+.animation-fade-in {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; }

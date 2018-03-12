@@ -1,0 +1,12 @@
+
+	/*
+	Matrioshka. 
+	simple useful HTML5/CSS3 lightweight skeleton
+	Source code: https://github.com/rus-bit/Matrioshka
+	Home: https://rus-bit.com/matrioshka/
+	Version: 0.1.25
+	Build date 2018.03.12 12:31
+	License:Apache License Version 2.0
+	Copyright (c) 2018 RusBit LTD
+	Author: RusBit
+	*/[class*=animation-]{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both}.animation-fade-in{-webkit-animation-name:fadeIn;-moz-animation-name:fadeIn;-ms-animation-name:fadeIn;-o-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-moz-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-ms-keyframes fadeIn{.animation-fade-in from{opacity:0}.animation-fade-in to{opacity:1}}@-o-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}

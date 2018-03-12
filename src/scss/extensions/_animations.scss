@@ -1,10 +1,12 @@
+//animation css class prefix name
+$m_animation_class_name: animation;
 
-[class*='animation-'] {
+[class*='#{$m_animation_class_name}-'] {
 	@include duration(1s);
 	@include fill-mode(both);
 }
 
-.animation-fade-in {
+.#{$m_animation_class_name}-fade-in {
 	@include keyframes(fadeIn){
 		from {
 			opacity: 0;
@@ -14,4 +16,62 @@
 		}
 	}
 	@include animation-name(fadeIn);
+}
+
+.#{$m_animation_class_name}-fade-in-down {
+	@include keyframes(fadeInDown){
+		from {
+			opacity: 0;
+			transform: translate3d(0, -100%, 0);
+		}
+		to {
+			opacity: 1;
+    		transform: translate3d(0, 0, 0);
+		}
+	}
+	@include animation-name(fadeInDown);
+}
+
+.#{$m_animation_class_name}-fade-in-left {
+	@include keyframes(fadeInLeft){
+		from {
+			opacity: 0;
+			transform: translate3d(-100%, 0, 0);
+		}
+		to {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	@include animation-name(fadeInLeft);
+}
+
+.#{$m_animation_class_name}-fade-in-right {
+	@include keyframes(fadeInRight){
+		from {
+			opacity: 0;
+			transform: translate3d(100%, 0, 0);
+		  }
+		
+		  to {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		  }
+	}
+	@include animation-name(fadeInRight);
+}
+
+.#{$m_animation_class_name}-fade-in-up {
+	@include keyframes(fadeInUp){
+		from {
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		  }
+		
+		  to {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		  }
+	}
+	@include animation-name(fadeInUp);
 }

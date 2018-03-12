@@ -16,12 +16,14 @@
 	&:hover {
 		color: $clr-hover;
 		border: solid 1px $clr-hover;
+		text-decoration:none;
 	}
 
 	&:active {
 		color: $clr-active;
 		background-color: $clr;
 		border: solid 1px $clr;
+		text-decoration:none;
 	}
 
 	&.btn-block {

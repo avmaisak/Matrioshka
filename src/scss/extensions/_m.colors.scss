@@ -19,3 +19,10 @@
 		}
 	}
 }
+
+
+@for $i from 0 through 100 {
+	.shadow-box#{$i} {
+		box-shadow: 0 2px #{$i}px rgba(0,0,0,.3);
+	}
+}

@@ -9,3 +9,16 @@ Responsive:
 [md]
 [lg]
 
+Spacing:
+[m] - margin
+[p] - padding
+
+Direction:
+[t] - top
+[r] - right
+[b] - bottom
+[l] - left
+
+Combination separator "-"
+Ex: margin-top-smx
+

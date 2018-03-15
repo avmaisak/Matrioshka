@@ -56,38 +56,42 @@ Glyphs list
 	content: '\ea06';
 }
 
-.mi-github:before {
+.mi-gear:before {
 	content: '\ea07';
 }
 
-.mi-grid:before {
+.mi-github:before {
 	content: '\ea08';
 }
 
-.mi-heart-out:before {
+.mi-grid:before {
 	content: '\ea09';
 }
 
-.mi-heart:before {
+.mi-heart-out:before {
 	content: '\ea0a';
 }
 
-.mi-home:before {
+.mi-heart:before {
 	content: '\ea0b';
 }
 
-.mi-home2:before {
+.mi-home:before {
 	content: '\ea0c';
 }
 
-.mi-instagram:before {
+.mi-home2:before {
 	content: '\ea0d';
 }
 
-.mi-qrcode:before {
+.mi-instagram:before {
 	content: '\ea0e';
 }
 
-.mi-telephone:before {
+.mi-qrcode:before {
 	content: '\ea0f';
+}
+
+.mi-telephone:before {
+	content: '\ea10';
 }

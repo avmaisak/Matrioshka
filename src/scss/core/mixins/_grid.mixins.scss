@@ -9,31 +9,31 @@
 
 	@for $i from 1 through $grid-cols {
 		$iterator: ($m_unit_perc * $i / $grid-cols);
-		&.w#{$i} {
+		&.w-#{$i} {
 			@include grid-row ($iterator);
 		}
 
 		@include smx() {
-			&.wsmx#{$i} {
+			&.w-#{$i}-smx {
 				@include grid-row ($iterator);
 			}
 		}
 
 		@include sm() {
-			&.wsm#{$i} {
+			&.w-#{$i}-sm {
 				@include grid-row ($iterator);
 			}
 		}
 
 
 		@include md() {
-			&.wmd#{$i} {
+			&.w-#{$i}-md {
 				@include grid-row ($iterator);
 			}
 		}
 
 		@include lg() {
-			&.wlg#{$i} {
+			&.w-#{$i}-lg {
 				@include grid-row ($iterator);
 			}
 		}

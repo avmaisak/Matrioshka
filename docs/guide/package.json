@@ -1,0 +1,14 @@
+{
+  "name": "basys-starter-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "basys": "basys"
+  },
+  "devDependencies": {
+    "basys": "~0.3.1"
+  },
+  "engines": {
+    "node": ">= 8"
+  }
+}

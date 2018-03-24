@@ -19,6 +19,14 @@ Direction:
 [b] - bottom
 [l] - left
 
+Units:
+[px] - pixels
+[rem] - rem
+
+Sizing:
+[h] - height
+[w] - width
+
 Combination separator "-"
-Ex: margin-top-smx
+Ex: m-t-smx-5
 

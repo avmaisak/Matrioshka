@@ -88,10 +88,14 @@ Glyphs list
 	content: '\ea0e';
 }
 
-.mi-qrcode:before {
+.mi-nav:before {
 	content: '\ea0f';
 }
 
-.mi-telephone:before {
+.mi-qrcode:before {
 	content: '\ea10';
+}
+
+.mi-telephone:before {
+	content: '\ea11';
 }

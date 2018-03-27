@@ -56,62 +56,70 @@ Glyphs list
 	content: '\ea06';
 }
 
-.mi-gear:before {
+.mi-facebook:before {
 	content: '\ea07';
 }
 
-.mi-github:before {
+.mi-gear:before {
 	content: '\ea08';
 }
 
-.mi-grid:before {
+.mi-github:before {
 	content: '\ea09';
 }
 
-.mi-heart-out:before {
+.mi-grid:before {
 	content: '\ea0a';
 }
 
-.mi-heart:before {
+.mi-heart-out:before {
 	content: '\ea0b';
 }
 
-.mi-home:before {
+.mi-heart:before {
 	content: '\ea0c';
 }
 
-.mi-home2:before {
+.mi-home:before {
 	content: '\ea0d';
 }
 
-.mi-instagram:before {
+.mi-home2:before {
 	content: '\ea0e';
 }
 
-.mi-nav:before {
+.mi-instagram:before {
 	content: '\ea0f';
 }
 
-.mi-qrcode:before {
+.mi-nav:before {
 	content: '\ea10';
 }
 
-.mi-telephone:before {
+.mi-qrcode:before {
 	content: '\ea11';
 }
 
-.mi-triangle-down:before {
+.mi-telephone:before {
 	content: '\ea12';
 }
 
-.mi-triangle-left:before {
+.mi-triangle-down:before {
 	content: '\ea13';
 }
 
-.mi-triangle-right:before {
+.mi-triangle-left:before {
 	content: '\ea14';
 }
 
-.mi-triangle-up:before {
+.mi-triangle-right:before {
 	content: '\ea15';
+}
+
+.mi-triangle-up:before {
+	content: '\ea16';
+}
+
+.mi-youtube:before {
+	content: '\ea17';
 }

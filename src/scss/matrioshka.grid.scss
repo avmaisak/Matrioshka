@@ -1,5 +1,6 @@
 //core
-@import "matrioshka.reset.scss";
+@import "core/config/_variables";
+@import "core/mixins/_colors_mixins";
 @import "core/mixins/_grid.mixins";
 @import "core/mixins/_mediaqueries";
 @import "core/_grid";

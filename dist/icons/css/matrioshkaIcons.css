@@ -98,4 +98,20 @@ Glyphs list
 
 .mi-telephone:before {
 	content: '\ea11';
+}
+
+.mi-triangle-down:before {
+	content: '\ea12';
+}
+
+.mi-triangle-left:before {
+	content: '\ea13';
+}
+
+.mi-triangle-right:before {
+	content: '\ea14';
+}
+
+.mi-triangle-up:before {
+	content: '\ea15';
 }

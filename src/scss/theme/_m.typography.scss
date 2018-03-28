@@ -70,7 +70,6 @@ pre code {
 	color: $theme-default-color;
 }
 
-
 @for $i from 1 through 7 {
 	$iterator: ($i * 100);
 

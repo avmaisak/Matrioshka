@@ -120,6 +120,10 @@ Glyphs list
 	content: '\ea16';
 }
 
-.mi-youtube:before {
+.mi-vk:before {
 	content: '\ea17';
+}
+
+.mi-youtube:before {
+	content: '\ea18';
 }

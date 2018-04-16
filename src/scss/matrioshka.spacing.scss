@@ -1,0 +1,134 @@
+@import "core/config/_variables.scss";
+@import "core/mixins/_mediaqueries";
+@import "core/mixins/_positioning";
+
+@for $i from 0 through 100 {
+	.h-vh-#{$i} {
+		min-height: $i + vh;
+	}
+
+	.h-vh-strict-#{$i} {
+		height: $i + vh;
+		min-height: $i + vh;
+		max-height: $i + vh;
+	}
+	.w-#{$i} {
+		width: $i + %;
+	}
+
+	@include smx() {
+		.w-smx-#{$i} {
+			width: $i + %;
+		}
+	}
+
+	@include sm() {
+		.w-sm-#{$i} {
+			width: $i + %;
+		}
+	}
+
+	@include md() {
+		.w-md-#{$i} {
+			width: $i + %;
+		}
+	}
+
+	@include lg() {
+		.w-lg-#{$i} {
+			width: $i + %;
+		}
+	}
+}
+
+@for $i from 0 through 10 {
+	.p-t-#{$i} {
+		padding-t: $i + rem;
+	}
+	.p-b-#{$i} {
+		padding-bottom: $i + rem;
+	}
+	.p-l-#{$i} {
+		padding-left: $i + rem;
+	}
+	.p-r-#{$i} {
+		padding-right: $i + rem;
+	}
+	.p-#{$i} {
+		padding: $i + rem;
+	}
+	.m-t-#{$i} {
+		margin-t: $i + rem;
+	}
+	.m-b-#{$i} {
+		margin-bottom: $i + rem;
+	}
+	.m-l-#{$i} {
+		margin-left: $i + rem;
+	}
+	.m-r-#{$i} {
+		margin-right: $i + rem;
+	}
+	.m-#{$i} {
+		margin: $i + rem;
+	}
+
+	@include smx() {
+		.p-t-smx-#{$i} {
+			padding-t: $i + rem;
+		}
+
+		.p-smx-#{$i} {
+			padding: $i + rem;
+		}
+	}
+
+	@include sm() {
+		.p-t-sm-#{$i} {
+			padding-t: $i + rem;
+		}
+		.p-sm-#{$i} {
+			padding: $i + rem;
+		}
+	}
+
+	@include md() {
+		.p-t-md-#{$i} {
+			padding-t: $i + rem;
+		}
+
+		.p-md-#{$i} {
+			padding: $i + rem;
+		}
+	}
+
+	@include lg() {
+		.p-t-lg-#{$i} {
+			padding-t: $i + rem;
+		}
+		.p-lg-#{$i} {
+			padding: $i + rem;
+		}
+	}
+}
+
+.blck-cntr {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.clearfix {
+	@include clearfix();
+}
+.fix-t {
+	@include fixTop();
+}
+.flt-l{
+	@include flt-l();
+}
+.flt-r{
+	@include flt-r();
+}
+.flt-none{
+	@include flt-none();
+}

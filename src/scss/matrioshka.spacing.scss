@@ -2,46 +2,68 @@
 @import "core/mixins/_mediaqueries";
 @import "core/mixins/_positioning";
 
-@for $i from 0 through 100 {
-	.h-vh-#{$i} {
+
+
+@for $i from 1 through 100 {
+	.h-#{$i} {
 		min-height: $i + vh;
 	}
 
-	.h-vh-strict-#{$i} {
+	.h-strict-#{$i} {
 		height: $i + vh;
 		min-height: $i + vh;
 		max-height: $i + vh;
 	}
+
 	.w-#{$i} {
-		width: $i + %;
+		width: $i + vh;
 	}
 
 	@include smx() {
 		.w-smx-#{$i} {
-			width: $i + %;
+			width: $i + vh;
+		}
+		.h-smx-#{$i} {
+			height: $i + rem;
 		}
 	}
 
 	@include sm() {
 		.w-sm-#{$i} {
-			width: $i + %;
+			width: $i + vh;
+		}
+		.h-sm-#{$i} {
+			height: $i + rem;
 		}
 	}
 
 	@include md() {
 		.w-md-#{$i} {
-			width: $i + %;
+			width: $i + vh;
+		}
+		.h-md-#{$i} {
+			height: $i + rem;
 		}
 	}
 
 	@include lg() {
+
 		.w-lg-#{$i} {
-			width: $i + %;
+			width: $i + vh;
 		}
+		.h-lg-#{$i} {
+			height: $i + rem;
+		}
+
 	}
 }
 
-@for $i from 0 through 10 {
+@for $i from 1 through 10 {
+
+
+	.h-#{$i} {
+		height: $i + rem;
+	}
 	.p-t-#{$i} {
 		padding-t: $i + rem;
 	}
@@ -75,20 +97,31 @@
 
 	@include smx() {
 		.p-t-smx-#{$i} {
-			padding-t: $i + rem;
+			padding: $i + rem;
 		}
-
 		.p-smx-#{$i} {
 			padding: $i + rem;
+		}
+		.w-smx-#{$i} {
+			width: $i + rem;
+		}
+		.h-smx-#{$i} {
+			height: $i + rem;
 		}
 	}
 
 	@include sm() {
 		.p-t-sm-#{$i} {
-			padding-t: $i + rem;
+			padding: $i + rem;
 		}
 		.p-sm-#{$i} {
 			padding: $i + rem;
+		}
+		.w-sm-#{$i} {
+			width: $i + rem;
+		}
+		.h-sm-#{$i} {
+			height: $i + rem;
 		}
 	}
 
@@ -100,6 +133,12 @@
 		.p-md-#{$i} {
 			padding: $i + rem;
 		}
+		.w-md-#{$i} {
+			width: $i + rem;
+		}
+		.h-md-#{$i} {
+			height: $i + rem;
+		}
 	}
 
 	@include lg() {
@@ -109,17 +148,20 @@
 		.p-lg-#{$i} {
 			padding: $i + rem;
 		}
+		.w-lg-#{$i} {
+			width: $i + rem;
+		}
+		.h-lg-#{$i} {
+			height: $i + rem;
+		}
 	}
 }
 
-.blck-cntr {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-}
+
 .clearfix {
 	@include clearfix();
 }
+
 .fix-t {
 	@include fixTop();
 }

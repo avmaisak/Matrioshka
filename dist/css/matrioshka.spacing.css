@@ -5,7 +5,7 @@
 	Source code: https://github.com/rus-bit/Matrioshka
 	Home: https://rus-bit.com/matrioshka/
 	Version: 0.1.25
-	Build date 2018.04.16 03:28
+	Build date 2018.04.23 11:09
 	License:Apache License Version 2.0
 	Copyright (c) 2018 RusBit LTD
 	Author: RusBit
@@ -3528,7 +3528,7 @@
   padding: 1rem; }
 
 .m-t-1 {
-  margin-t: 1rem; }
+  margin-top: 1rem; }
 
 .m-b-1 {
   margin-bottom: 1rem; }
@@ -3601,7 +3601,7 @@
   padding: 2rem; }
 
 .m-t-2 {
-  margin-t: 2rem; }
+  margin-top: 2rem; }
 
 .m-b-2 {
   margin-bottom: 2rem; }
@@ -3674,7 +3674,7 @@
   padding: 3rem; }
 
 .m-t-3 {
-  margin-t: 3rem; }
+  margin-top: 3rem; }
 
 .m-b-3 {
   margin-bottom: 3rem; }
@@ -3747,7 +3747,7 @@
   padding: 4rem; }
 
 .m-t-4 {
-  margin-t: 4rem; }
+  margin-top: 4rem; }
 
 .m-b-4 {
   margin-bottom: 4rem; }
@@ -3820,7 +3820,7 @@
   padding: 5rem; }
 
 .m-t-5 {
-  margin-t: 5rem; }
+  margin-top: 5rem; }
 
 .m-b-5 {
   margin-bottom: 5rem; }
@@ -3893,7 +3893,7 @@
   padding: 6rem; }
 
 .m-t-6 {
-  margin-t: 6rem; }
+  margin-top: 6rem; }
 
 .m-b-6 {
   margin-bottom: 6rem; }
@@ -3966,7 +3966,7 @@
   padding: 7rem; }
 
 .m-t-7 {
-  margin-t: 7rem; }
+  margin-top: 7rem; }
 
 .m-b-7 {
   margin-bottom: 7rem; }
@@ -4039,7 +4039,7 @@
   padding: 8rem; }
 
 .m-t-8 {
-  margin-t: 8rem; }
+  margin-top: 8rem; }
 
 .m-b-8 {
   margin-bottom: 8rem; }
@@ -4112,7 +4112,7 @@
   padding: 9rem; }
 
 .m-t-9 {
-  margin-t: 9rem; }
+  margin-top: 9rem; }
 
 .m-b-9 {
   margin-bottom: 9rem; }
@@ -4185,7 +4185,7 @@
   padding: 10rem; }
 
 .m-t-10 {
-  margin-t: 10rem; }
+  margin-top: 10rem; }
 
 .m-b-10 {
   margin-bottom: 10rem; }

@@ -5,7 +5,7 @@
 	Source code: https://github.com/rus-bit/Matrioshka
 	Home: https://rus-bit.com/matrioshka/
 	Version: 0.1.25
-	Build date 2018.04.23 11:09
+	Build date 2018.04.23 11:13
 	License:Apache License Version 2.0
 	Copyright (c) 2018 RusBit LTD
 	Author: RusBit
@@ -3513,7 +3513,7 @@
   height: 1rem; }
 
 .p-t-1 {
-  padding-t: 1rem; }
+  padding-top: 1rem; }
 
 .p-b-1 {
   padding-bottom: 1rem; }
@@ -3564,7 +3564,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-1 {
-    padding-t: 1rem; }
+    padding-top: 1rem; }
   .p-md-1 {
     padding: 1rem; }
   .w-md-1 {
@@ -3574,7 +3574,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-1 {
-    padding-t: 1rem; }
+    padding-top: 1rem; }
   .p-lg-1 {
     padding: 1rem; }
   .w-lg-1 {
@@ -3586,7 +3586,7 @@
   height: 2rem; }
 
 .p-t-2 {
-  padding-t: 2rem; }
+  padding-top: 2rem; }
 
 .p-b-2 {
   padding-bottom: 2rem; }
@@ -3637,7 +3637,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-2 {
-    padding-t: 2rem; }
+    padding-top: 2rem; }
   .p-md-2 {
     padding: 2rem; }
   .w-md-2 {
@@ -3647,7 +3647,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-2 {
-    padding-t: 2rem; }
+    padding-top: 2rem; }
   .p-lg-2 {
     padding: 2rem; }
   .w-lg-2 {
@@ -3659,7 +3659,7 @@
   height: 3rem; }
 
 .p-t-3 {
-  padding-t: 3rem; }
+  padding-top: 3rem; }
 
 .p-b-3 {
   padding-bottom: 3rem; }
@@ -3710,7 +3710,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-3 {
-    padding-t: 3rem; }
+    padding-top: 3rem; }
   .p-md-3 {
     padding: 3rem; }
   .w-md-3 {
@@ -3720,7 +3720,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-3 {
-    padding-t: 3rem; }
+    padding-top: 3rem; }
   .p-lg-3 {
     padding: 3rem; }
   .w-lg-3 {
@@ -3732,7 +3732,7 @@
   height: 4rem; }
 
 .p-t-4 {
-  padding-t: 4rem; }
+  padding-top: 4rem; }
 
 .p-b-4 {
   padding-bottom: 4rem; }
@@ -3783,7 +3783,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-4 {
-    padding-t: 4rem; }
+    padding-top: 4rem; }
   .p-md-4 {
     padding: 4rem; }
   .w-md-4 {
@@ -3793,7 +3793,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-4 {
-    padding-t: 4rem; }
+    padding-top: 4rem; }
   .p-lg-4 {
     padding: 4rem; }
   .w-lg-4 {
@@ -3805,7 +3805,7 @@
   height: 5rem; }
 
 .p-t-5 {
-  padding-t: 5rem; }
+  padding-top: 5rem; }
 
 .p-b-5 {
   padding-bottom: 5rem; }
@@ -3856,7 +3856,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-5 {
-    padding-t: 5rem; }
+    padding-top: 5rem; }
   .p-md-5 {
     padding: 5rem; }
   .w-md-5 {
@@ -3866,7 +3866,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-5 {
-    padding-t: 5rem; }
+    padding-top: 5rem; }
   .p-lg-5 {
     padding: 5rem; }
   .w-lg-5 {
@@ -3878,7 +3878,7 @@
   height: 6rem; }
 
 .p-t-6 {
-  padding-t: 6rem; }
+  padding-top: 6rem; }
 
 .p-b-6 {
   padding-bottom: 6rem; }
@@ -3929,7 +3929,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-6 {
-    padding-t: 6rem; }
+    padding-top: 6rem; }
   .p-md-6 {
     padding: 6rem; }
   .w-md-6 {
@@ -3939,7 +3939,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-6 {
-    padding-t: 6rem; }
+    padding-top: 6rem; }
   .p-lg-6 {
     padding: 6rem; }
   .w-lg-6 {
@@ -3951,7 +3951,7 @@
   height: 7rem; }
 
 .p-t-7 {
-  padding-t: 7rem; }
+  padding-top: 7rem; }
 
 .p-b-7 {
   padding-bottom: 7rem; }
@@ -4002,7 +4002,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-7 {
-    padding-t: 7rem; }
+    padding-top: 7rem; }
   .p-md-7 {
     padding: 7rem; }
   .w-md-7 {
@@ -4012,7 +4012,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-7 {
-    padding-t: 7rem; }
+    padding-top: 7rem; }
   .p-lg-7 {
     padding: 7rem; }
   .w-lg-7 {
@@ -4024,7 +4024,7 @@
   height: 8rem; }
 
 .p-t-8 {
-  padding-t: 8rem; }
+  padding-top: 8rem; }
 
 .p-b-8 {
   padding-bottom: 8rem; }
@@ -4075,7 +4075,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-8 {
-    padding-t: 8rem; }
+    padding-top: 8rem; }
   .p-md-8 {
     padding: 8rem; }
   .w-md-8 {
@@ -4085,7 +4085,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-8 {
-    padding-t: 8rem; }
+    padding-top: 8rem; }
   .p-lg-8 {
     padding: 8rem; }
   .w-lg-8 {
@@ -4097,7 +4097,7 @@
   height: 9rem; }
 
 .p-t-9 {
-  padding-t: 9rem; }
+  padding-top: 9rem; }
 
 .p-b-9 {
   padding-bottom: 9rem; }
@@ -4148,7 +4148,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-9 {
-    padding-t: 9rem; }
+    padding-top: 9rem; }
   .p-md-9 {
     padding: 9rem; }
   .w-md-9 {
@@ -4158,7 +4158,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-9 {
-    padding-t: 9rem; }
+    padding-top: 9rem; }
   .p-lg-9 {
     padding: 9rem; }
   .w-lg-9 {
@@ -4170,7 +4170,7 @@
   height: 10rem; }
 
 .p-t-10 {
-  padding-t: 10rem; }
+  padding-top: 10rem; }
 
 .p-b-10 {
   padding-bottom: 10rem; }
@@ -4221,7 +4221,7 @@
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .p-t-md-10 {
-    padding-t: 10rem; }
+    padding-top: 10rem; }
   .p-md-10 {
     padding: 10rem; }
   .w-md-10 {
@@ -4231,7 +4231,7 @@
 
 @media screen and (min-width: 75rem) {
   .p-t-lg-10 {
-    padding-t: 10rem; }
+    padding-top: 10rem; }
   .p-lg-10 {
     padding: 10rem; }
   .w-lg-10 {

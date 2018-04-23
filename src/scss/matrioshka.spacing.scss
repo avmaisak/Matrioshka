@@ -65,7 +65,7 @@
 		height: $i + rem;
 	}
 	.p-t-#{$i} {
-		padding-t: $i + rem;
+		padding-top: $i + rem;
 	}
 	.p-b-#{$i} {
 		padding-bottom: $i + rem;
@@ -127,7 +127,7 @@
 
 	@include md() {
 		.p-t-md-#{$i} {
-			padding-t: $i + rem;
+			padding-top: $i + rem;
 		}
 
 		.p-md-#{$i} {
@@ -143,7 +143,7 @@
 
 	@include lg() {
 		.p-t-lg-#{$i} {
-			padding-t: $i + rem;
+			padding-top: $i + rem;
 		}
 		.p-lg-#{$i} {
 			padding: $i + rem;

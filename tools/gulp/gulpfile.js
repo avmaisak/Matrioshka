@@ -1,6 +1,6 @@
 ﻿
 //gulp
-let 
+let
 	gulp = require('gulp'),
 	cleanCSS = require('gulp-clean-css'),
 	rename = require('gulp-rename'),
@@ -18,19 +18,7 @@ let
 //gulp common config options
 let gulpCfg = {
 	scssDestRoot: "../../src/scss/",
-	distFileDestination:"../../dist/css/",
-	descriptionHeader:`
-	/*
-	Matrioshka. 
-	${pkgInfo.description}
-	Source code: https://github.com/rus-bit/Matrioshka
-	Home: https://rus-bit.com/matrioshka/
-	Version: ${ pkgInfo.version }
-	Build date ${dateFormat(new Date(), "yyyy.mm.dd hh:MM")}
-	License:Apache License Version 2.0
-	Copyright (c) 2018 RusBit LTD
-	Author: ${ pkgInfo.author }
-	*/`
+	distFileDestination:"../../dist/css/"
 };
 
 console.log('\x1Bc');
@@ -46,7 +34,7 @@ gulp.task('clean-icons', ()=> {
 });
 
 gulp.task('clean-all', gulp.series([
-	'clean', 
+	'clean',
 	'clean-icons'
 ]));
 
@@ -59,14 +47,14 @@ gulp.task('sass', () => {
 
 gulp.task('css-all', () => {
 	return gulp.src("../../src/scss/*.css")
-		.pipe(header(gulpCfg.descriptionHeader))
+
 		.pipe(gulp.dest(`../../dist/css`));
 });
 
 gulp.task('css-all-min', () => {
 	return gulp.src("../../src/scss/*.css")
 		.pipe(cleanCSS())
-		.pipe(header(gulpCfg.descriptionHeader))
+
 		.pipe(rename({
 			suffix: ".min",
 			extname: ".css"
@@ -77,14 +65,14 @@ gulp.task('css-all-min', () => {
 gulp.task('css-icons-min', () => {
 	return gulp.src("../../dist/icons/css/matrioshkaIcons.css")
 		.pipe(cleanCSS())
-		.pipe(header(gulpCfg.descriptionHeader))
+
 		.pipe(rename("matrioshkaIcons.min.css"))
 		.pipe(gulp.dest('../../dist/icons/css/'));
 });
 
 gulp.task('css-all-tarball', () => {
 
-	gzip({ 
+	gzip({
 		append: true,
 		gzipOptions: { level: 9 }
 	});
@@ -113,7 +101,7 @@ gulp.task('iconfont', function () {
 					 fontDate: new Date().getTime()
 				 }))
 				 .pipe(gulp.dest('../../dist/icons/css/'));
- 
+
 			 gulp.src('../../tools/icons/matrioshkaIcons.html')
 				 .pipe(consolidate('underscore', {
 					 glyphs: glyphs,
@@ -125,7 +113,7 @@ gulp.task('iconfont', function () {
 });
 
 gulp.task('make-icons', gulp.series([
-	'clean-icons', 
+	'clean-icons',
 	'iconfont',
 	'css-icons-min'
 ]));
@@ -159,7 +147,7 @@ gulp.task('make-icon-sprite', function (){
 });
 
 gulp.task('default', gulp.series([
-	'clean-all', 
+	'clean-all',
 	'sass',
 	'css-all',
 	'css-all-min',

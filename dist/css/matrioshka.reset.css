@@ -1,15 +1,4 @@
-
-	/*
-	Matrioshka. 
-	simple useful HTML5/CSS3 lightweight skeleton
-	Source code: https://github.com/rus-bit/Matrioshka
-	Home: https://rus-bit.com/matrioshka/
-	Version: 0.1.25
-	Build date 2018.04.23 11:13
-	License:Apache License Version 2.0
-	Copyright (c) 2018 RusBit LTD
-	Author: RusBit
-	*/*,
+*,
 *::before,
 *::after {
   box-sizing: border-box; }
@@ -20,7 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }

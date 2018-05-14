@@ -64,12 +64,12 @@ $pos-array :(
 }
 
 @mixin sz($suffix:null){
-	@for $f from 1 through 10 {
+	@for $f from 0 through 10 {
 		@for $n from 0 through 99 {
 
 			@if $suffix != null {
 
-				@if $n == 0{
+				@if $n == 0 {
 					.txt-sz-#{$f}-#{$suffix}{
 						font-size: #{$f}#{"."}#{$n}rem;
 					}
@@ -95,14 +95,6 @@ $pos-array :(
 }
 
 @include sz();
-
-// @for $f from 1 through 10 {
-// 	@for $n from 1 through 10 {
-// 		.f-sz-#{$f}-#{$n} {
-// 			font-size: #{$f}#{"."}#{$n}rem;
-// 		}
-// 	}
-// }
 
 .flt-l{
 	@include flt-l();

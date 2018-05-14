@@ -70,22 +70,22 @@ $pos-array :(
 			@if $suffix != null {
 
 				@if $n == 0{
-					.f-sz-#{$f}-#{$suffix}{
+					.txt-sz-#{$f}-#{$suffix}{
 						font-size: #{$f}#{"."}#{$n}rem;
 					}
 				}@else{
-					.f-sz-#{$f}-#{$n}-#{$suffix}{
+					.txt-sz-#{$f}-#{$n}-#{$suffix}{
 						font-size: #{$f}#{"."}#{$n}rem;
 					}
 				}
 			}
 			@else {
 				@if $n == 0{
-					.f-sz-#{$f} {
+					.txt-sz-#{$f} {
 						font-size: #{$f}#{"."}#{$n}rem;
 					}
 				}@else{
-					.f-sz-#{$f}-#{$n} {
+					.txt-sz-#{$f}-#{$n} {
 						font-size: #{$f}#{"."}#{$n}rem;
 					}
 				}

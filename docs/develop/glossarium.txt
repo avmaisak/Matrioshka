@@ -39,3 +39,5 @@ Ex: m-t-smx-5
 [none] - none
 [sz] - size
 [f] - font
+
+[flt] -float

@@ -1,6 +1,6 @@
 ﻿
 //gulp
-let
+var
 	gulp = require('gulp'),
 	cleanCSS = require('gulp-clean-css'),
 	rename = require('gulp-rename'),
@@ -16,7 +16,7 @@ let
 ;
 
 //gulp common config options
-let gulpCfg = {
+var gulpCfg = {
 	scssDestRoot: "../../src/scss/",
 	distFileDestination:"../../dist/css/"
 };

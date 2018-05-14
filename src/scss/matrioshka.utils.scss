@@ -1,0 +1,216 @@
+@import "core/config/_variables.scss";
+@import "core/mixins/_mediaqueries";
+@import "core/mixins/_positioning";
+
+$display-types-array: (
+	block,
+	inline,
+	contents,
+	grid,
+	inline-block,
+	inline-flex,
+	inline-grid,
+	inline-table,
+	list-item,
+	run-in,
+	table,
+	table-caption,
+	table-column-group,
+	table-header-group,
+	table-footer-group,
+	table-row-group,
+	table-cell,
+	table-column,
+	table-row,
+	none,
+	initial,
+	inherit,
+);
+
+$align-array :(
+	left : l,
+	right: r,
+	center : c,
+	justify: j,
+	inherit : inh,
+);
+
+$visibility-array :(
+	visible : visible,
+	hidden: hidden,
+	collapse : collapse,
+	inherit : inh,
+);
+
+$valign-array :(
+	baseline,
+	top,
+	middle,
+	bottom,
+	text-top,
+	text-bottom,
+);
+$pos-array :(
+	static,
+	absolute,
+	fixed,
+	relative,
+	sticky,
+	inherit,
+);
+
+@for $i from 1 through 99 {
+	.z-#{$i} { z-index: $i; }
+}
+
+@mixin sz($suffix:null){
+	@for $f from 1 through 10 {
+		@for $n from 0 through 99 {
+
+			@if $suffix != null {
+
+				@if $n == 0{
+					.f-sz-#{$f}-#{$suffix}{
+						font-size: #{$f}#{"."}#{$n}rem;
+					}
+				}@else{
+					.f-sz-#{$f}-#{$n}-#{$suffix}{
+						font-size: #{$f}#{"."}#{$n}rem;
+					}
+				}
+			}
+			@else {
+				@if $n == 0{
+					.f-sz-#{$f} {
+						font-size: #{$f}#{"."}#{$n}rem;
+					}
+				}@else{
+					.f-sz-#{$f}-#{$n} {
+						font-size: #{$f}#{"."}#{$n}rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include sz();
+
+// @for $f from 1 through 10 {
+// 	@for $n from 1 through 10 {
+// 		.f-sz-#{$f}-#{$n} {
+// 			font-size: #{$f}#{"."}#{$n}rem;
+// 		}
+// 	}
+// }
+
+.flt-l{
+	@include flt-l();
+}
+.flt-r{
+	@include flt-r();
+}
+.flt-none{
+	@include flt-none();
+}
+
+.fix-t {
+	@include fixTop();
+}
+
+.clearfix {
+	@include clearfix();
+}
+
+@mixin fix-top-suffix($suffix){
+	.fix-t-#{$suffix}{
+		@include fixTop();
+	}
+}
+
+@mixin display($type){
+	display:$type;
+}
+
+@mixin display-suffix($suffix){
+	@each $type in $display-types-array {
+		.d-#{$type}-#{$suffix}{
+			@include display($type);
+		}
+	}
+}
+
+@each $type in $display-types-array {
+	.d-#{$type}{
+		@include display($type);
+	}
+}
+
+@each $type in $valign-array {
+	.valign-#{$type}{
+		vertical-align:$type;
+	}
+}
+
+@each $type,$val in $align-array {
+	.txt-#{$val}{
+		text-align: #{$type};
+	}
+}
+
+@each $type in $pos-array {
+	.pos-#{$type}{
+		position: #{$type};
+	}
+}
+
+//responsive mix
+@mixin responsive-mix($suffix){
+
+	@each $type,$val in $visibility-array {
+		.v-#{$val}-#{$suffix}{
+			visibility: #{$type};
+		}
+	}
+	@each $type,$val in $align-array {
+		.txt-#{$val}-#{$suffix}{
+			text-align: #{$type};
+		}
+	}
+	@each $type in $valign-array {
+		.valign-#{$type}-#{$suffix}{
+			vertical-align:$type;
+		}
+	}
+	@include display-suffix($suffix);
+	@include fix-top-suffix($suffix);
+	@include sz($suffix);
+}
+
+//media-queries
+@each $media in $media-queries-arr{
+
+	@if $media == smx {
+		@include smx() {
+			@include responsive-mix($media);
+		}
+	 }
+
+	 @if $media == sm {
+		@include sm() {
+			@include responsive-mix($media);
+		}
+	 }
+
+	 @if $media == md {
+		@include md() {
+			@include responsive-mix($media);
+		}
+	}
+
+	 @if $media == lg {
+		@include lg() {
+			@include responsive-mix($media);
+		}
+	 }
+}

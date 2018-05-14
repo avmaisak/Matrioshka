@@ -8,12 +8,12 @@
     "gulp-cli": "^2.0.1",
     "gulp-copy": "^1.1.0",
     "gulp-csso": "^3.0.1",
-    "npm": "^5.7.1"
+    "npm": "^5.10.0"
   },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
-    "gulp-clean-css": "^3.9.3",
+    "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-consolidate": "^0.1.2",
     "gulp-gzip": "^1.4.2",
@@ -25,7 +25,7 @@
     "gulp-sass": "^3.2.1",
     "gulp-svg-sprite": "^1.4.0",
     "gulp-tar": "^2.1.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.9.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

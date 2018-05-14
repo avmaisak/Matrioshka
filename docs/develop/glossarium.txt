@@ -18,6 +18,9 @@ Direction:
 [r] - right
 [b] - bottom
 [l] - left
+[c] - center
+[j] - justify
+[inh] - inherit
 
 Units:
 [px] - pixels
@@ -27,6 +30,12 @@ Sizing:
 [h] - height
 [w] - width
 
+[d] - display
+[v] - visibility
+
 Combination separator "-"
 Ex: m-t-smx-5
 
+[none] - none
+[sz] - size
+[f] - font

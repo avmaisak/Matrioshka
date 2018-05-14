@@ -4227,23 +4227,3 @@
     width: 10rem; }
   .h-lg-10 {
     height: 10rem; } }
-
-.clearfix::before, .clearfix::after {
-  display: block;
-  content: "";
-  clear: both; }
-
-.fix-t {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; }
-
-.flt-l {
-  float: left !important; }
-
-.flt-r {
-  float: right !important; }
-
-.flt-none {
-  float: none !important; }

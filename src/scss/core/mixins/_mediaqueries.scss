@@ -1,27 +1,32 @@
 //mediaqueries
 
-@mixin smx() {
+@mixin smx  {
 	@media screen and (max-width:$resp-bp-sm-x) {
 		@content;
 	}
 }
 
-@mixin sm() {
+@mixin sm {
 	@media screen and (min-width:$resp-bp-sm-x) and (max-width:$resp-bp-md)  {
 		@content;
 	}
 }
 
-@mixin md() {
+@mixin md  {
 	@media screen and (min-width:$resp-bp-md) and (max-width:$resp-bp-lg)  {
 		@content;
 	}
 }
 
-@mixin lg() {
+@mixin lg  {
 	@media screen and (min-width:$resp-bp-lg)  {
 		@content;
 	}
 }
 
-
+$media-queries-arr: (
+	'smx',
+	'sm',
+	'md',
+	'lg'
+);

@@ -19,7 +19,8 @@ $brd-radius: $m_unit_gold / 6 + rem;
 	line-height: 1;
 	font-size: $m_unit_def;
 	cursor:pointer;
-	border:solid $border-width transparent;
+	border-width:$border-width;
+	border-style: solid;
 	border-radius: $border-radius;
 
 	&:hover {
@@ -70,6 +71,14 @@ $brd-radius: $m_unit_gold / 6 + rem;
 	margin:0;
 }
 
+.btn-rnd-sm {
+	border-radius: 50%;
+	width: 1rem;
+	height:1rem;
+	padding:0 !important;
+	margin:0;
+}
+
 //Buttons
 @each $color-name, $color-variants in $material-colors {
 
@@ -81,6 +90,12 @@ $brd-radius: $m_unit_gold / 6 + rem;
 		.btn-#{$s} {
 			border-color:#{$hex-value};
 			color: #{$hex-value};
+			background-color:#fff;
+
+			&:active {
+				background-color: #{$hex-value};
+				color:#fff;
+			}
 		}
 
 		.btn-sm-#{$s} {
@@ -98,6 +113,7 @@ $brd-radius: $m_unit_gold / 6 + rem;
 	background: $clr-white;
 	border-radius: 2px;
 	box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+	width:100%;
 	padding:
 
 		$m_unit_gold / 2.9 + rem
@@ -109,6 +125,7 @@ $brd-radius: $m_unit_gold / 6 + rem;
 		border-bottom: solid 1px #e3e4e8;
 		padding:0 0 $m_unit_gold / 3 + rem 0;
 		margin: 0 0 $m_unit_gold / 2.4 + rem 0;
+
 		.header-title {
 			text-overflow:ellipsis;
 			white-space: nowrap;

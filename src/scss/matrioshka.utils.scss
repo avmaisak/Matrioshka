@@ -96,24 +96,6 @@ $pos-array :(
 
 @include sz();
 
-.flt-l{
-	@include flt-l();
-}
-.flt-r{
-	@include flt-r();
-}
-.flt-none{
-	@include flt-none();
-}
-
-.fix-t {
-	@include fixTop();
-}
-
-.clearfix {
-	@include clearfix();
-}
-
 @mixin fix-top-suffix($suffix){
 	.fix-t-#{$suffix}{
 		@include fixTop();
@@ -205,4 +187,23 @@ $pos-array :(
 			@include responsive-mix($media);
 		}
 	 }
+}
+
+
+.flt-l{
+	@include flt-l();
+}
+.flt-r{
+	@include flt-r();
+}
+.flt-none{
+	@include flt-none();
+}
+
+.fix-t {
+	@include fixTop();
+}
+
+.clearfix {
+	@include clearfix();
 }

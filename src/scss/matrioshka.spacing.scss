@@ -2,9 +2,31 @@
 @import "core/mixins/_mediaqueries";
 @import "core/mixins/_positioning";
 
-@for $i from 1 through 100 {
+@mixin margin($t:0,$r:0, $b:0, $l:0){
+	margin:$t+vh $r+vw $b+vh $l+vw;
+}
+
+@for $i from 0 through 100 {
 	.h-#{$i} {
 		min-height: $i + vh;
+	}
+
+	.m-#{$i}-vp {
+		@include margin($i,$i,$i,$i);
+	}
+	.m-t-#{$i}-vp {
+		@include margin($i);
+	}
+	.m-r-#{$i}-vp {
+		@include margin(0,$i,0,0);
+	}
+
+	.m-b-#{$i}-vp {
+		@include margin(0,0,$i,0);
+	}
+
+	.m-l-#{$i}-vp {
+		@include margin(0,0,0,$i);
 	}
 
 	.h-strict-#{$i} {
@@ -17,46 +39,116 @@
 		width: $i + vh;
 	}
 
+	.w-#{$i}-perc {
+		width: $i + %;
+	}
+
 	@include smx() {
-		.w-smx-#{$i} {
+		.w-#{$i}-smx {
 			width: $i + vh;
 		}
-		.h-smx-#{$i} {
+		.h-#{$i}-smx {
 			height: $i + rem;
+		}
+		.m-#{$i}-vp-smx {
+			@include margin($i,$i,$i,$i);
+		}
+		.m-t-#{$i}-vp-smx {
+			@include margin($i);
+		}
+		.m-r-#{$i}-vp-smx {
+			@include margin(0,$i,0,0);
+		}
+
+		.m-b-#{$i}-vp-smx {
+			@include margin(0,0,$i,0);
+		}
+
+		.m-l-#{$i}-vp-smx {
+			@include margin(0,0,0,$i);
 		}
 	}
 
 	@include sm() {
-		.w-sm-#{$i} {
+		.m-#{$i}-vp-sm {
+			@include margin($i,$i,$i,$i);
+		}
+		.m-t-#{$i}-vp-sm {
+			@include margin($i);
+		}
+		.m-r-#{$i}-vp-sm {
+			@include margin(0,$i,0,0);
+		}
+
+		.m-b-#{$i}-vp-sm {
+			@include margin(0,0,$i,0);
+		}
+
+		.m-l-#{$i}-vp-sm {
+			@include margin(0,0,0,$i);
+		}
+		.w-#{$i}-sm {
 			width: $i + vh;
 		}
-		.h-sm-#{$i} {
+		.h-#{$i}-sm {
 			height: $i + rem;
 		}
 	}
 
 	@include md() {
-		.w-md-#{$i} {
+		.m-#{$i}-vp-md {
+			@include margin($i,$i,$i,$i);
+		}
+		.m-t-#{$i}-vp-md {
+			@include margin($i);
+		}
+		.m-r-#{$i}-vp-md {
+			@include margin(0,$i,0,0);
+		}
+
+		.m-b-#{$i}-vp-md {
+			@include margin(0,0,$i,0);
+		}
+
+		.m-l-#{$i}-vp-md {
+			@include margin(0,0,0,$i);
+		}
+		.w-#{$i}-md {
 			width: $i + vh;
 		}
-		.h-md-#{$i} {
+		.h-#{$i}-md {
 			height: $i + rem;
 		}
 	}
 
 	@include lg() {
+		.m-#{$i}-lg {
+			@include margin($i,$i,$i,$i);
+		}
+		.m-t-#{$i}-lg {
+			@include margin($i);
+		}
+		.m-r-#{$i}-lg {
+			@include margin(0,$i,0,0);
+		}
 
-		.w-lg-#{$i} {
+		.m-b-#{$i}-lg {
+			@include margin(0,0,$i,0);
+		}
+
+		.m-l-#{$i}-lg {
+			@include margin(0,0,0,$i);
+		}
+		.w-#{$i}-lg {
 			width: $i + vh;
 		}
-		.h-lg-#{$i} {
+		.h-#{$i}-lg {
 			height: $i + rem;
 		}
-
 	}
 }
 
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
 
 	.h-#{$i} {
 		height: $i + rem;

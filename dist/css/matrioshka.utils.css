@@ -3595,26 +3595,6 @@
 .txt-sz-10-99 {
   font-size: 10.99rem; }
 
-.flt-l {
-  float: left !important; }
-
-.flt-r {
-  float: right !important; }
-
-.flt-none {
-  float: none !important; }
-
-.fix-t {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; }
-
-.clearfix::before, .clearfix::after {
-  display: block;
-  content: "";
-  clear: both; }
-
 .d-block {
   display: block; }
 
@@ -12855,3 +12835,23 @@
     font-size: 10.98rem; }
   .txt-sz-10-99-lg {
     font-size: 10.99rem; } }
+
+.flt-l {
+  float: left !important; }
+
+.flt-r {
+  float: right !important; }
+
+.flt-none {
+  float: none !important; }
+
+.fix-t {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.clearfix::before, .clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }

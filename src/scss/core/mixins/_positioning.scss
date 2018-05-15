@@ -1,5 +1,10 @@
 //positioning mixins
 
+@mixin margin-padding($sz: 0 rem){
+	margin:$sz;
+	padding:$sz;
+}
+
 // Mixin itself
 @mixin clearfix() {
 	&::before,
@@ -10,12 +15,12 @@
 	}
 }
 
-// To quickly centre a block element without having to worry about 
+// To quickly centre a block element without having to worry about
 // if there is any top or bottom margin already applied.
 @mixin push-auto {
 	margin: {
 		left: auto;
-		right: auto; 
+		right: auto;
 	}
 }
 

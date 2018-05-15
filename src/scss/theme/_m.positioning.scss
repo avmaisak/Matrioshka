@@ -1,10 +1,10 @@
 
 @for $i from 0 through 100 {
-	.hght-vh-#{$i} {
+	.hght-vp-#{$i} {
 		min-height: $i + vh;
 	}
 
-	.hght-vh-strict-#{$i} {
+	.hght-vp-strict-#{$i} {
 		height: $i + vh;
 		min-height: $i + vh;
 		max-height: $i + vh;

@@ -5,11 +5,10 @@
 		 url('../fonts/matrioshkaIcons.woff2') format('woff2'),
 		 url('../fonts/matrioshkaIcons.woff') format('woff'),
 		 url('../fonts/matrioshkaIcons.ttf') format('truetype'),
-		 url("../fonts/matrioshkaIcons.svg") format("svg"); 
+		 url("../fonts/matrioshkaIcons.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
-
 
 [class^='mi-']:before,
 [class*=' mi-']:before {
@@ -5430,4 +5429,4 @@ Glyphs list
 
 .mi-youtube:before {
 	content: '\ef46';
-}
+}

@@ -1,0 +1,105 @@
+@import "core/config/_variables";
+@import "core/mixins/_colors_mixins";
+@import "core/_colors";
+@import "core/mixins/_positioning";
+
+$sz-def: $m_unit_gold / 4 + rem;
+$sz-def-2: $m_unit_gold / 2 + rem;
+$brd-radius: $m_unit_gold / 6 + rem;
+
+@mixin margin-default(){
+	margin: $sz-def 0;
+}
+
+@mixin btn($border-width:1px, $border-radius:2px) {
+
+	text-decoration: none;
+	padding: $sz-def-2;
+	line-height: 1;
+	font-size: $m_unit_def;
+	background-color: transparent;
+	cursor:pointer;
+	border:solid $border-width transparent;
+	border-radius: $border-radius;
+
+	&:hover {
+		text-decoration:none;
+	}
+
+	&:active {
+		text-decoration:none;
+	}
+
+	@content;
+}
+
+//Form
+.frm {
+	.frm-grp{
+		display: block;
+
+		label {
+			margin:0 0 $sz-def 0;
+		}
+
+		.frm-ctrl {
+			border:solid 1px $clr-grey;
+			border-radius: 2px;
+			display: block;
+			width:100%;
+			margin:0;
+			padding:$sz-def $m_unit_gold / 2.5 + rem;
+
+			&:focus{
+				border-color: $clr-safest-999;
+			}
+		}
+	}
+}
+
+.btn,
+[class^='btn-']{
+	@include btn();
+}
+
+//Buttons
+@each $color-name, $color-variants in $material-colors {
+
+	@each $color-variant, $hex-value in $color-variants {
+		$s:#{$color-name}-#{$color-variant};
+
+		.btn-sm-#{$s},
+		.btn-#{$s} {
+			border-color:#{$hex-value};
+			color: #{$hex-value};
+		}
+
+		.btn-sm-#{$s} {
+			padding: $sz-def;
+		}
+
+	}
+}
+
+.panel {
+	background: $clr-white;
+	border-radius: 2px;
+	box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+	padding:
+
+		$m_unit_gold / 2.9 + rem
+		$m_unit_gold / 2 + rem
+		$m_unit_gold + rem
+		$m_unit_gold / 2 + rem;
+
+	.panel-header {
+		border-bottom: solid 1px #e3e4e8;
+		padding:0 0 $m_unit_gold / 3 + rem 0;
+		margin: 0 0 $m_unit_gold / 2.4 + rem 0;
+		.header-title {
+			text-overflow:ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+	}
+}

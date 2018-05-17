@@ -15,9 +15,8 @@ $brd-radius: $m_unit_gold / 6 + rem;
 @mixin btn($border-width:1px, $border-radius:2px) {
 
 	text-decoration: none;
-	padding: $sz-def-2;
+	padding: $sz-def-2 $m_unit_gold + rem;
 	line-height: 1;
-	font-size: $m_unit_def;
 	cursor:pointer;
 	border-width:$border-width;
 	border-style: solid;
@@ -33,7 +32,6 @@ $brd-radius: $m_unit_gold / 6 + rem;
 
 	@content;
 }
-
 //Form
 .frm {
 	.frm-grp{

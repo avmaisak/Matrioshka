@@ -58,14 +58,31 @@ $pos-array :(
 	sticky,
 	inherit,
 );
+$txt-transform :(
+	capitalize,
+	lowercase,
+	uppercase,
+	none,
+);
+$txt-weight :(
+	bold,
+	bolder,
+	lighter,
+	100,
+	200,
+	300,
+	400,
+	500,
+	600,
+	700,
+	800,
+	900,
+);
 
-@for $i from 1 through 99 {
-	.z-#{$i} { z-index: $i; }
-}
 
 @mixin sz($suffix:null){
 	@for $f from 0 through 10 {
-		@for $n from 0 through 99 {
+		@for $n from 0 through 9 {
 
 			@if $suffix != null {
 
@@ -114,9 +131,64 @@ $pos-array :(
 	}
 }
 
+@mixin txt-transform($suffix){
+	@each $transform in $txt-transform {
+		.txt-#{$transform}-#{$suffix} {
+			text-transform:$transform;
+		}
+	}
+}
+
+@mixin txt-weight($suffix){
+	@each $weight in $txt-weight {
+		.txt-#{$weight}-#{$suffix} {
+			font-weight:$weight;
+		}
+	}
+}
+
+@mixin opacity($suffix:null) {
+	$res_s:null;
+
+	@if $suffix != null{
+		$res_s:#{"-"}#{$suffix};
+	}
+	@else{
+		$res_s:null;
+	}
+
+	@for $s from 0 through 1 {
+		@for $f from 1 through 9 {
+			@if $s == 0 {
+				.opacity-#{$s}-#{$f}#{$res_s} {
+					opacity:#{$s}#{"."}#{$f};
+				}
+			}
+		}
+	}
+	.opacity-0#{$res_s} {
+		opacity:1;
+	}
+	.opacity-0#{$res_s} {
+		opacity:1;
+	}
+}
+
+@each $weight in $txt-weight {
+	.txt-#{$weight} {
+		font-weight:$weight;
+	}
+}
+
 @each $type in $display-types-array {
 	.d-#{$type}{
 		@include display($type);
+	}
+}
+
+@each $transform in $txt-transform {
+	.txt-#{$transform} {
+		text-transform:$transform;
 	}
 }
 
@@ -159,6 +231,8 @@ $pos-array :(
 	@include display-suffix($suffix);
 	@include fix-top-suffix($suffix);
 	@include sz($suffix);
+	@include txt-transform($suffix);
+	@include opacity($suffix);
 }
 
 //media-queries
@@ -189,6 +263,7 @@ $pos-array :(
 	 }
 }
 
+@include opacity();
 
 .flt-l{
 	@include flt-l();

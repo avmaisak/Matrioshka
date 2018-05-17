@@ -15,9 +15,8 @@
 .btn,
 [class^='btn-'] {
   text-decoration: none;
-  padding: 0.80902rem;
+  padding: 0.80902rem 1.61803rem;
   line-height: 1;
-  font-size: 1rem;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;

@@ -40,7 +40,7 @@
 	}
 
 	.w-#{$i}-perc {
-		width: $i + %;
+		width: $i#{"%"};
 	}
 
 	@include smx() {
@@ -185,62 +185,62 @@
 	}
 
 	@include smx() {
-		.p-t-smx-#{$i} {
+		.p-t-#{$i}-smx {
 			padding: $i + rem;
 		}
-		.p-smx-#{$i} {
+		.p-#{$i}-smx {
 			padding: $i + rem;
 		}
-		.w-smx-#{$i} {
+		.w-#{$i}-smx {
 			width: $i + rem;
 		}
-		.h-smx-#{$i} {
+		.h-#{$i}-smx {
 			height: $i + rem;
 		}
 	}
 
 	@include sm() {
-		.p-t-sm-#{$i} {
+		.p-t-#{$i}-sm {
 			padding: $i + rem;
 		}
-		.p-sm-#{$i} {
+		.p-#{$i}-sm {
 			padding: $i + rem;
 		}
-		.w-sm-#{$i} {
+		.w-#{$i}-sm {
 			width: $i + rem;
 		}
-		.h-sm-#{$i} {
+		.h-#{$i}-sm {
 			height: $i + rem;
 		}
 	}
 
 	@include md() {
-		.p-t-md-#{$i} {
+		.p-t-#{$i}-md {
 			padding-top: $i + rem;
 		}
 
-		.p-md-#{$i} {
+		.p-#{$i}-md {
 			padding: $i + rem;
 		}
-		.w-md-#{$i} {
+		.w-#{$i}-md {
 			width: $i + rem;
 		}
-		.h-md-#{$i} {
+		.h-#{$i}-md {
 			height: $i + rem;
 		}
 	}
 
 	@include lg() {
-		.p-t-lg-#{$i} {
+		.p-t-#{$i}-lg {
 			padding-top: $i + rem;
 		}
-		.p-lg-#{$i} {
+		.p-#{$i}-lg {
 			padding: $i + rem;
 		}
-		.w-lg-#{$i} {
+		.w-#{$i}-lg {
 			width: $i + rem;
 		}
-		.h-lg-#{$i} {
+		.h-#{$i}-lg {
 			height: $i + rem;
 		}
 	}

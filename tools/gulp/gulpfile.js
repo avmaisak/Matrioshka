@@ -64,8 +64,7 @@ gulp.task('css-all-min', () => {
 
 gulp.task('css-icons-min', () => {
 	return gulp.src("../../dist/icons/css/matrioshkaIcons.css")
-		.pipe(cleanCSS())
-
+		.pipe(cleanCSS({ allowEmpty: true }))
 		.pipe(rename("matrioshkaIcons.min.css"))
 		.pipe(gulp.dest('../../dist/icons/css/'));
 });

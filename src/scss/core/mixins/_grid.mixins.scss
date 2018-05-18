@@ -25,7 +25,6 @@
 			}
 		}
 
-
 		@include md() {
 			&.w-#{$i}-md {
 				@include grid-row ($iterator);

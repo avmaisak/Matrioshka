@@ -191,9 +191,6 @@
 		.p-#{$i}-smx {
 			padding: $i + rem;
 		}
-		.w-#{$i}-smx {
-			width: $i + rem;
-		}
 		.h-#{$i}-smx {
 			height: $i + rem;
 		}
@@ -205,9 +202,6 @@
 		}
 		.p-#{$i}-sm {
 			padding: $i + rem;
-		}
-		.w-#{$i}-sm {
-			width: $i + rem;
 		}
 		.h-#{$i}-sm {
 			height: $i + rem;
@@ -222,9 +216,6 @@
 		.p-#{$i}-md {
 			padding: $i + rem;
 		}
-		.w-#{$i}-md {
-			width: $i + rem;
-		}
 		.h-#{$i}-md {
 			height: $i + rem;
 		}
@@ -236,9 +227,6 @@
 		}
 		.p-#{$i}-lg {
 			padding: $i + rem;
-		}
-		.w-#{$i}-lg {
-			width: $i + rem;
 		}
 		.h-#{$i}-lg {
 			height: $i + rem;

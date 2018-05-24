@@ -1,0 +1,172 @@
+
+$display-types-array: (
+	block,
+	inline,
+	contents,
+	grid,
+	inline-block,
+	inline-flex,
+	inline-grid,
+	inline-table,
+	list-item,
+	run-in,
+	table,
+	table-caption,
+	table-column-group,
+	table-header-group,
+	table-footer-group,
+	table-row-group,
+	table-cell,
+	table-column,
+	table-row,
+	none,
+	initial,
+	inherit,
+);
+
+$align-array :(
+	left : l,
+	right: r,
+	center : c,
+	justify: j,
+	inherit : inh,
+);
+
+$visibility-array :(
+	visible : visible,
+	hidden: hidden,
+	collapse : collapse,
+	inherit : inh,
+);
+
+$valign-array :(
+	baseline,
+	top,
+	middle,
+	bottom,
+	text-top,
+	text-bottom,
+);
+$pos-array :(
+	static,
+	absolute,
+	fixed,
+	relative,
+	sticky,
+	inherit,
+);
+$txt-transform :(
+	capitalize,
+	lowercase,
+	uppercase,
+	none,
+);
+$txt-weight :(
+	bold,
+	bolder,
+	lighter,
+	100,
+	200,
+	300,
+	400,
+	500,
+	600,
+	700,
+	800,
+	900,
+);
+
+
+@mixin sz($suffix:null){
+	@for $f from 0 through 10 {
+		@for $n from 0 through 9 {
+
+			@if $suffix != null {
+
+				@if $n == 0 {
+					.txt-sz-#{$f}-#{$suffix}{
+						font-size: #{$f}#{"."}#{$n}rem;
+					}
+				}@else{
+					.txt-sz-#{$f}-#{$n}-#{$suffix}{
+						font-size: #{$f}#{"."}#{$n}rem;
+					}
+				}
+			}
+			@else {
+				@if $n == 0{
+					.txt-sz-#{$f} {
+						font-size: #{$f}#{"."}#{$n}rem;
+					}
+				}@else{
+					.txt-sz-#{$f}-#{$n} {
+						font-size: #{$f}#{"."}#{$n}rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+@mixin fix-top-suffix($suffix){
+	.fix-t-#{$suffix}{
+		@include fixTop();
+	}
+}
+
+@mixin display($type){
+	display:$type;
+}
+
+@mixin display-suffix($suffix){
+	@each $type in $display-types-array {
+		.d-#{$type}-#{$suffix}{
+			@include display($type);
+		}
+	}
+}
+
+@mixin txt-transform($suffix){
+	@each $transform in $txt-transform {
+		.txt-#{$transform}-#{$suffix} {
+			text-transform:$transform;
+		}
+	}
+}
+
+@mixin txt-weight($suffix){
+	@each $weight in $txt-weight {
+		.txt-#{$weight}-#{$suffix} {
+			font-weight:$weight;
+		}
+	}
+}
+
+@mixin opacity($suffix:null) {
+	$res_s:null;
+
+	@if $suffix != null{
+		$res_s:#{"-"}#{$suffix};
+	}
+	@else{
+		$res_s:null;
+	}
+
+	@for $s from 0 through 1 {
+		@for $f from 1 through 9 {
+			@if $s == 0 {
+				.opacity-#{$s}-#{$f}#{$res_s} {
+					opacity:#{$s}#{"."}#{$f};
+				}
+			}
+		}
+	}
+	.opacity-0#{$res_s} {
+		opacity:1;
+	}
+	.opacity-0#{$res_s} {
+		opacity:1;
+	}
+}

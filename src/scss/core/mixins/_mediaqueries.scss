@@ -30,3 +30,29 @@ $media-queries-arr: (
 	'md',
 	'lg'
 );
+
+
+//responsive mix
+@mixin responsive-mix($suffix){
+
+	@each $type,$val in $visibility-array {
+		.v-#{$val}-#{$suffix}{
+			visibility: #{$type};
+		}
+	}
+	@each $type,$val in $align-array {
+		.txt-#{$val}-#{$suffix}{
+			text-align: #{$type};
+		}
+	}
+	@each $type in $valign-array {
+		.valign-#{$type}-#{$suffix}{
+			vertical-align:$type;
+		}
+	}
+	@include display-suffix($suffix);
+	@include fix-top-suffix($suffix);
+	@include sz($suffix);
+	@include txt-transform($suffix);
+	@include opacity($suffix);
+}

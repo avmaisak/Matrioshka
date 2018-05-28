@@ -170,3 +170,32 @@ $txt-weight :(
 		opacity:1;
 	}
 }
+
+
+@mixin break-word($suffix:null){
+	$res_s:null;
+
+	@if $suffix != null{
+		$res_s:#{"-"}#{$suffix};
+	}
+	@else{
+		$res_s:null;
+	}
+
+.txt-break-word#{$res_s} {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		word-break: break-all;
+		word-break: break-word;
+		-ms-hyphens: auto;
+		-moz-hyphens: auto;
+		-webkit-hyphens: auto;
+		-ms-word-break: break-all;
+	}
+
+ .txt-ellipsis#{$res_s} {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}

@@ -3,8 +3,36 @@
 @import "core/mixins/_positioning";
 @import "core/mixins/_utils";
 
+
+//responsive mix
+@mixin responsive-mix($suffix){
+
+	@each $type,$val in $visibility-array {
+		.v-#{$val}-#{$suffix}{
+			visibility: #{$type};
+		}
+	}
+	@each $type,$val in $align-array {
+		.txt-#{$val}-#{$suffix}{
+			text-align: #{$type};
+		}
+	}
+	@each $type in $valign-array {
+		.valign-#{$type}-#{$suffix}{
+			vertical-align:$type;
+		}
+	}
+	@include display-suffix($suffix);
+	@include fix-top-suffix($suffix);
+	@include sz($suffix);
+	@include txt-transform($suffix);
+	@include opacity($suffix);
+	@include break-word($suffix);
+}
+
 @include sz();
 @include opacity();
+@include break-word();
 
 @each $weight in $txt-weight {
 	.txt-#{$weight} {
@@ -41,6 +69,7 @@
 		position: #{$type};
 	}
 }
+
 
 //media-queries
 @each $media in $media-queries-arr{

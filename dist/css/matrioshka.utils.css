@@ -361,6 +361,21 @@
 .opacity-0 {
   opacity: 1; }
 
+.txt-break-word {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-word-break: break-all; }
+
+.txt-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
 .txt-bold {
   font-weight: bold; }
 
@@ -855,7 +870,20 @@
   .opacity-0-smx {
     opacity: 1; }
   .opacity-0-smx {
-    opacity: 1; } }
+    opacity: 1; }
+  .txt-break-word-smx {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-word-break: break-all; }
+  .txt-ellipsis-smx {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; } }
 
 @media screen and (min-width: 36rem) and (max-width: 62rem) {
   .v-visible-sm {
@@ -1186,7 +1214,20 @@
   .opacity-0-sm {
     opacity: 1; }
   .opacity-0-sm {
-    opacity: 1; } }
+    opacity: 1; }
+  .txt-break-word-sm {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-word-break: break-all; }
+  .txt-ellipsis-sm {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; } }
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .v-visible-md {
@@ -1517,7 +1558,20 @@
   .opacity-0-md {
     opacity: 1; }
   .opacity-0-md {
-    opacity: 1; } }
+    opacity: 1; }
+  .txt-break-word-md {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-word-break: break-all; }
+  .txt-ellipsis-md {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; } }
 
 @media screen and (min-width: 75rem) {
   .v-visible-lg {
@@ -1848,7 +1902,20 @@
   .opacity-0-lg {
     opacity: 1; }
   .opacity-0-lg {
-    opacity: 1; } }
+    opacity: 1; }
+  .txt-break-word-lg {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-word-break: break-all; }
+  .txt-ellipsis-lg {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; } }
 
 .flt-l {
   float: left !important; }

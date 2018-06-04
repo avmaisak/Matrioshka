@@ -26,7 +26,7 @@
     "gulp-sass": "^3.2.1",
     "gulp-svg-sprite": "^1.4.0",
     "gulp-tar": "^2.1.0",
-    "underscore": "^1.9.0"
+    "underscore": "^1.9.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

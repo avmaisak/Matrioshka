@@ -2,9 +2,9 @@
   <div>
     <h1 class="clr-indigo-600 m-b-2">Иконки</h1>
 
-    <div v-for="ico in icons" v-bind:key="ico" class="p-1 d-inline-block w-22 txt-sz-3 txt-c brd-style-dotted clr-brd-grey-400 m-1">
+    <div v-for="ico in icons" v-bind:key="ico" class="p-1 d-inline-block w-26  txt-sz-3 txt-c brd-style-dotted clr-brd-grey-400 m-1">
       <i :class='`mi-${ico}`'></i>
-      <small class="txt-sz-0-8 d-block m-t-1">mi-{{ico}}</small>
+      <small class="txt-sz-0-7 d-block m-t-1">mi-{{ico}}</small>
     </div>
   </div>
 </template>

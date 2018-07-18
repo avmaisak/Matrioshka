@@ -55,6 +55,17 @@
        &lt;div class="cl w-6">&lt;/div>
       &lt;/div></pre>
 
+    <div class="rw h-2 m-t-2">
+        <div class="cl w-6 w-12-sm clr-bg-amber-50"></div>
+        <div class="cl w-6 w-12-sm clr-bg-amber-100"></div>
+    </div>
+
+    <pre class="p-2 clr-bg-grey-100 m-t-2 m-b-2 clr-grey-700">
+      &lt;div class="rw">
+       &lt;div class="cl w-6">&lt;/div>
+       &lt;div class="cl w-6">&lt;/div>
+      &lt;/div></pre>
+
   </div>
 </template>
 

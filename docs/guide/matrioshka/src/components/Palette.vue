@@ -18,7 +18,7 @@
         Этому элементу назначен цвет фона и бордюра.
       &lt;/div></pre>
 
-    <h2 class="clr-indigo-600">Цветовой набор</h2>
+    <h2 class="clr-indigo-400 m-b-2 txt-600">Цветовой набор</h2>
     <div class="txt-c clr-bg-grey-200 p-1 clearfix">
       <div v-for="c in colors" v-bind:key="c" class="d-inline-block w-30 m-1 txt-l clr-brd-grey-500 brd-style-dotted flt-l clr-bg-pal-def-white" :title="c">
         <div>

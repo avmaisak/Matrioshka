@@ -6,12 +6,12 @@
 }
 
 html {
-  font-family: sans-serif; 
+  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: $m_unit_perc_full;
   -ms-text-size-adjust: $m_unit_perc_full;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -40,18 +40,13 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: $m_unit_zero;
-  margin-bottom: $m_unit_zero;
-}
-
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin-top: $m_unit_zero;
   margin-bottom: $m_unit_zero;
 }
 
 abbr[title],
-abbr[data-original-title] { 
+abbr[data-original-title] {
   text-decoration: underline;
   text-decoration: underline dotted;
   cursor: help;
@@ -101,7 +96,7 @@ strong {
 }
 
 small {
-  font-size: 80%; // Add the correct font size in all browsers
+  font-size: 80%;
 }
 sub,
 sup {
@@ -118,7 +113,7 @@ sup { top: -.5em; }
 a {
   color: $clr-safest-000;
   text-decoration: none;
-  background-color: transparent; 
+  background-color: transparent;
   -webkit-text-decoration-skip: objects;
 
   @include hover {
@@ -147,7 +142,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: $font-family-monospace !important; 
+  font-family: $font-family-monospace !important;
   font-size: 1em;
 }
 
@@ -231,10 +226,10 @@ select {
 
 
 button,
-html [type="button"], 
+html [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; 
+  -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -247,7 +242,7 @@ button::-moz-focus-inner,
 
 input[type="radio"],
 input[type="checkbox"] {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: $m_unit_zero;
 }
 
@@ -316,12 +311,12 @@ output {
 }
 
 summary {
-  display: list-item; 
+  display: list-item;
   cursor: pointer;
 }
 
 template {
-  display: none; 
+  display: none;
 }
 
 [hidden] {

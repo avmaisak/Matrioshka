@@ -12,9 +12,7 @@ var
 	sass = require('gulp-sass'),
 	consolidate = require('gulp-consolidate'),
 	iconfont = require('gulp-iconfont'),
-	svgSprite = require('gulp-svg-sprite'),
-	svg_to_png = require('svg-to-png')
-// convertFile = require('convert-svg-to-png')
+	svg2png = require('gulp-svg2png')
 ;
 
 
@@ -121,7 +119,6 @@ gulp.task('iconfont', function () {
 		})
 		.pipe(gulp.dest('../../dist/icons/fonts/'));
 });
-
 gulp.task('make-icons', gulp.series([
 	'clean-icons',
 	'iconfont',
@@ -158,23 +155,18 @@ gulp.task('make-icon-sprite', function () {
 		.pipe(gulp.dest('../../dist/icons/sprite/'));
 });
 
-gulp.task('svgtopng', () => {
-	fs.readdir(`${gulpCfg.srcRoot}icons/svg`, (err, data) => {
-		if (err) throw err;
-		data.forEach(d => {
-			console.log(d);
+// Создать png файлы из svg.
+// (!) Внимание! Это задание может выполнятся очень долго (от 6 до 20 минут)
+gulp.task('svg2png',  () => {
 
-			// console.log(d);
-			var inputFilePath = `${gulpCfg.srcRoot}icons/svg/${d}`;
-			var outputFilePath = `${gulpCfg.distRoot}icons/i/png/${d.replace('.svg','')}.png`;
-			svg_to_png.convert(inputFilePath, outputFilePath) // async, returns promise
-			 	.then(function (a) {
-					console.log(a)
-			 	});
+	const options = {
+		width: 120,
+		height: 120
+	};
 
-
-		});
-	});
+	return gulp.src('../../src/icons/svg/*.svg')
+		 .pipe(svg2png(options))
+		 .pipe(gulp.dest('../../dist/icons/png'));
 });
 
 gulp.task('default', gulp.series([
@@ -184,5 +176,6 @@ gulp.task('default', gulp.series([
 	'css-all-min',
 	'css-all-tarball',
 	'make-icons',
-	'make-icon-sprite'
+	'make-icon-sprite',
+	'svg2png'
 ]));

@@ -27,6 +27,7 @@
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^3.2.1",
     "gulp-svg-sprite": "^1.4.0",
+    "gulp-svg2png": "^2.0.2",
     "gulp-tar": "^2.1.0",
     "underscore": "^1.9.1"
   },

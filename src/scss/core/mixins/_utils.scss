@@ -55,12 +55,14 @@ $pos-array :(
 	sticky,
 	inherit,
 );
+
 $txt-transform :(
 	capitalize,
 	lowercase,
 	uppercase,
 	none,
 );
+
 $txt-weight :(
 	bold,
 	bolder,
@@ -76,6 +78,18 @@ $txt-weight :(
 	900,
 );
 
+$brd-style : (
+	none,
+	hidden,
+	dotted,
+	dashed,
+	solid,
+	double,
+	groove,
+	ridge,
+	inset,
+	outset
+);
 
 @mixin sz($suffix:null){
 	@for $f from 0 through 10 {
@@ -107,8 +121,6 @@ $txt-weight :(
 		}
 	}
 }
-
-
 
 @mixin fix-top-suffix($suffix){
 	.fix-t-#{$suffix}{
@@ -170,7 +182,6 @@ $txt-weight :(
 		opacity:1;
 	}
 }
-
 
 @mixin break-word($suffix:null){
 	$res_s:null;

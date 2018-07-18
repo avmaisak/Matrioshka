@@ -36,6 +36,9 @@ Sizing:
 [d] - display
 [v] - visibility
 
+Attributes
+[brd] - border
+
 Combination separator "-"
 Ex: m-t-smx-5
 

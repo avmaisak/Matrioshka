@@ -114,3 +114,15 @@
 .clearfix {
 	@include clearfix();
 }
+
+@for $i from 1 through 10 {
+	.brd-radius-#{$i} {
+		border-radius:#{$i}px !important;
+	}
+ }
+
+ @each $bs in $brd-style {
+	.brd-style-#{$bs} {
+		border-style:$bs !important;
+	}
+}

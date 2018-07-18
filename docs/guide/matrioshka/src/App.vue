@@ -15,10 +15,8 @@
            <h3 class="m-b-1 txt-sz-1-3">Общие</h3>
            <div class="clr-grey-800">
               <a><router-link to="/Grid" class="d-block p-b-1">Сетка</router-link></a>
-              <a><router-link to="/Start" class="d-block p-b-1">Цветовая палитра</router-link></a>
-              <a><router-link to="/Start" class="d-block p-b-1">Иконки</router-link></a>
-              <a><router-link to="/Start" class="d-block p-b-1">Отсупы</router-link></a>
-              <a><router-link to="/Start" class="d-block p-b-1">Утилиты</router-link></a>
+              <a><router-link to="/Palette" class="d-block p-b-1">Цветовая палитра</router-link></a>
+              <a><router-link to="/Icons" class="d-block p-b-1">Иконки</router-link></a>
            </div>
            </div>
         </div>

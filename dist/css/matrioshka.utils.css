@@ -1936,3 +1936,63 @@
   display: block;
   content: "";
   clear: both; }
+
+.brd-radius-1 {
+  border-radius: 1px !important; }
+
+.brd-radius-2 {
+  border-radius: 2px !important; }
+
+.brd-radius-3 {
+  border-radius: 3px !important; }
+
+.brd-radius-4 {
+  border-radius: 4px !important; }
+
+.brd-radius-5 {
+  border-radius: 5px !important; }
+
+.brd-radius-6 {
+  border-radius: 6px !important; }
+
+.brd-radius-7 {
+  border-radius: 7px !important; }
+
+.brd-radius-8 {
+  border-radius: 8px !important; }
+
+.brd-radius-9 {
+  border-radius: 9px !important; }
+
+.brd-radius-10 {
+  border-radius: 10px !important; }
+
+.brd-style-none {
+  border-style: none !important; }
+
+.brd-style-hidden {
+  border-style: hidden !important; }
+
+.brd-style-dotted {
+  border-style: dotted !important; }
+
+.brd-style-dashed {
+  border-style: dashed !important; }
+
+.brd-style-solid {
+  border-style: solid !important; }
+
+.brd-style-double {
+  border-style: double !important; }
+
+.brd-style-groove {
+  border-style: groove !important; }
+
+.brd-style-ridge {
+  border-style: ridge !important; }
+
+.brd-style-inset {
+  border-style: inset !important; }
+
+.brd-style-outset {
+  border-style: outset !important; }

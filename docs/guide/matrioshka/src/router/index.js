@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Start from '@/components/Start'
 import Grid from '@/components/Grid'
+import Palette from '@/components/Palette'
+import Icons from '@/components/Icons'
 
 Vue.use(Router)
 
@@ -23,6 +25,16 @@ export default new Router({
       path: '/Grid',
       name: 'Grid',
       component: Grid
+    },
+    {
+      path: '/Palette',
+      name: 'Palette',
+      component: Palette
+    },
+    {
+      path: '/Icons',
+      name: 'Icons',
+      component: Icons
     }
   ]
 })

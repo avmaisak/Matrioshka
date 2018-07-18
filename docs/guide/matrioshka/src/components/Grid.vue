@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="clr-indigo-600 m-b-2">Сетка</h1>
-    <div class="rw h-3 m-b-2">
+    <div class="rw h-3">
         <div class="cl w-1 clr-bg-green-50"></div>
         <div class="cl w-1 clr-bg-green-100"></div>
         <div class="cl w-1 clr-bg-green-200"></div>
@@ -16,11 +16,45 @@
         <div class="cl w-1 clr-bg-green-700"></div>
     </div>
 
-    <div class="rw h-3">
-        <div class="cl w-3-lg w-2-md w-3-sm w-4-smx clr-bg-blue-50"></div>
-        <div class="cl w-4-lg w-2-md w-3-sm w-4-smx clr-bg-blue-100"></div>
-        <div class="cl w-5-lg w-2-md w-3-sm w-4-smx clr-bg-blue-200"></div>
+    <pre class="p-2 clr-bg-grey-100 m-t-2 m-b-2 clr-grey-700">
+      &lt;div class="rw">
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+       &lt;div class="cl w-1">&lt;/div>
+      &lt;/div></pre>
+
+    <div class="rw h-2 m-t-2">
+        <div class="cl w-4 clr-bg-blue-50"></div>
+        <div class="cl w-4 clr-bg-blue-100"></div>
+        <div class="cl w-4 clr-bg-blue-200"></div>
     </div>
+
+    <pre class="p-2 clr-bg-grey-100 m-t-2 m-b-2 clr-grey-700">
+      &lt;div class="rw">
+       &lt;div class="cl w-4">&lt;/div>
+       &lt;div class="cl w-4">&lt;/div>
+       &lt;div class="cl w-4">&lt;/div>
+      &lt;/div></pre>
+
+    <div class="rw h-2 m-t-2">
+        <div class="cl w-6 clr-bg-amber-50"></div>
+        <div class="cl w-6 clr-bg-amber-100"></div>
+    </div>
+
+    <pre class="p-2 clr-bg-grey-100 m-t-2 m-b-2 clr-grey-700">
+      &lt;div class="rw">
+       &lt;div class="cl w-6">&lt;/div>
+       &lt;div class="cl w-6">&lt;/div>
+      &lt;/div></pre>
+
   </div>
 </template>
 

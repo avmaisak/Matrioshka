@@ -12,7 +12,8 @@ var
 	sass = require('gulp-sass'),
 	consolidate = require('gulp-consolidate'),
 	iconfont = require('gulp-iconfont'),
-	svg2png = require('gulp-svg2png')
+	svg2png = require('gulp-svg2png'),
+	svgSprite = require('gulp-svg-sprite')
 ;
 
 

@@ -413,70 +413,70 @@
   font-weight: 900; }
 
 .d-block {
-  display: block; }
+  display: block !important; }
 
 .d-inline {
-  display: inline; }
+  display: inline !important; }
 
 .d-contents {
-  display: contents; }
+  display: contents !important; }
 
 .d-grid {
-  display: grid; }
+  display: grid !important; }
 
 .d-inline-block {
-  display: inline-block; }
+  display: inline-block !important; }
 
 .d-inline-flex {
-  display: inline-flex; }
+  display: inline-flex !important; }
 
 .d-inline-grid {
-  display: inline-grid; }
+  display: inline-grid !important; }
 
 .d-inline-table {
-  display: inline-table; }
+  display: inline-table !important; }
 
 .d-list-item {
-  display: list-item; }
+  display: list-item !important; }
 
 .d-run-in {
-  display: run-in; }
+  display: run-in !important; }
 
 .d-table {
-  display: table; }
+  display: table !important; }
 
 .d-table-caption {
-  display: table-caption; }
+  display: table-caption !important; }
 
 .d-table-column-group {
-  display: table-column-group; }
+  display: table-column-group !important; }
 
 .d-table-header-group {
-  display: table-header-group; }
+  display: table-header-group !important; }
 
 .d-table-footer-group {
-  display: table-footer-group; }
+  display: table-footer-group !important; }
 
 .d-table-row-group {
-  display: table-row-group; }
+  display: table-row-group !important; }
 
 .d-table-cell {
-  display: table-cell; }
+  display: table-cell !important; }
 
 .d-table-column {
-  display: table-column; }
+  display: table-column !important; }
 
 .d-table-row {
-  display: table-row; }
+  display: table-row !important; }
 
 .d-none {
-  display: none; }
+  display: none !important; }
 
 .d-initial {
-  display: initial; }
+  display: initial !important; }
 
 .d-inherit {
-  display: inherit; }
+  display: inherit !important; }
 
 .txt-capitalize {
   text-transform: capitalize; }
@@ -573,49 +573,49 @@
   .valign-text-bottom-smx {
     vertical-align: text-bottom; }
   .d-block-smx {
-    display: block; }
+    display: block !important; }
   .d-inline-smx {
-    display: inline; }
+    display: inline !important; }
   .d-contents-smx {
-    display: contents; }
+    display: contents !important; }
   .d-grid-smx {
-    display: grid; }
+    display: grid !important; }
   .d-inline-block-smx {
-    display: inline-block; }
+    display: inline-block !important; }
   .d-inline-flex-smx {
-    display: inline-flex; }
+    display: inline-flex !important; }
   .d-inline-grid-smx {
-    display: inline-grid; }
+    display: inline-grid !important; }
   .d-inline-table-smx {
-    display: inline-table; }
+    display: inline-table !important; }
   .d-list-item-smx {
-    display: list-item; }
+    display: list-item !important; }
   .d-run-in-smx {
-    display: run-in; }
+    display: run-in !important; }
   .d-table-smx {
-    display: table; }
+    display: table !important; }
   .d-table-caption-smx {
-    display: table-caption; }
+    display: table-caption !important; }
   .d-table-column-group-smx {
-    display: table-column-group; }
+    display: table-column-group !important; }
   .d-table-header-group-smx {
-    display: table-header-group; }
+    display: table-header-group !important; }
   .d-table-footer-group-smx {
-    display: table-footer-group; }
+    display: table-footer-group !important; }
   .d-table-row-group-smx {
-    display: table-row-group; }
+    display: table-row-group !important; }
   .d-table-cell-smx {
-    display: table-cell; }
+    display: table-cell !important; }
   .d-table-column-smx {
-    display: table-column; }
+    display: table-column !important; }
   .d-table-row-smx {
-    display: table-row; }
+    display: table-row !important; }
   .d-none-smx {
-    display: none; }
+    display: none !important; }
   .d-initial-smx {
-    display: initial; }
+    display: initial !important; }
   .d-inherit-smx {
-    display: inherit; }
+    display: inherit !important; }
   .fix-t-smx {
     position: fixed;
     top: 0;
@@ -917,49 +917,49 @@
   .valign-text-bottom-sm {
     vertical-align: text-bottom; }
   .d-block-sm {
-    display: block; }
+    display: block !important; }
   .d-inline-sm {
-    display: inline; }
+    display: inline !important; }
   .d-contents-sm {
-    display: contents; }
+    display: contents !important; }
   .d-grid-sm {
-    display: grid; }
+    display: grid !important; }
   .d-inline-block-sm {
-    display: inline-block; }
+    display: inline-block !important; }
   .d-inline-flex-sm {
-    display: inline-flex; }
+    display: inline-flex !important; }
   .d-inline-grid-sm {
-    display: inline-grid; }
+    display: inline-grid !important; }
   .d-inline-table-sm {
-    display: inline-table; }
+    display: inline-table !important; }
   .d-list-item-sm {
-    display: list-item; }
+    display: list-item !important; }
   .d-run-in-sm {
-    display: run-in; }
+    display: run-in !important; }
   .d-table-sm {
-    display: table; }
+    display: table !important; }
   .d-table-caption-sm {
-    display: table-caption; }
+    display: table-caption !important; }
   .d-table-column-group-sm {
-    display: table-column-group; }
+    display: table-column-group !important; }
   .d-table-header-group-sm {
-    display: table-header-group; }
+    display: table-header-group !important; }
   .d-table-footer-group-sm {
-    display: table-footer-group; }
+    display: table-footer-group !important; }
   .d-table-row-group-sm {
-    display: table-row-group; }
+    display: table-row-group !important; }
   .d-table-cell-sm {
-    display: table-cell; }
+    display: table-cell !important; }
   .d-table-column-sm {
-    display: table-column; }
+    display: table-column !important; }
   .d-table-row-sm {
-    display: table-row; }
+    display: table-row !important; }
   .d-none-sm {
-    display: none; }
+    display: none !important; }
   .d-initial-sm {
-    display: initial; }
+    display: initial !important; }
   .d-inherit-sm {
-    display: inherit; }
+    display: inherit !important; }
   .fix-t-sm {
     position: fixed;
     top: 0;
@@ -1261,49 +1261,49 @@
   .valign-text-bottom-md {
     vertical-align: text-bottom; }
   .d-block-md {
-    display: block; }
+    display: block !important; }
   .d-inline-md {
-    display: inline; }
+    display: inline !important; }
   .d-contents-md {
-    display: contents; }
+    display: contents !important; }
   .d-grid-md {
-    display: grid; }
+    display: grid !important; }
   .d-inline-block-md {
-    display: inline-block; }
+    display: inline-block !important; }
   .d-inline-flex-md {
-    display: inline-flex; }
+    display: inline-flex !important; }
   .d-inline-grid-md {
-    display: inline-grid; }
+    display: inline-grid !important; }
   .d-inline-table-md {
-    display: inline-table; }
+    display: inline-table !important; }
   .d-list-item-md {
-    display: list-item; }
+    display: list-item !important; }
   .d-run-in-md {
-    display: run-in; }
+    display: run-in !important; }
   .d-table-md {
-    display: table; }
+    display: table !important; }
   .d-table-caption-md {
-    display: table-caption; }
+    display: table-caption !important; }
   .d-table-column-group-md {
-    display: table-column-group; }
+    display: table-column-group !important; }
   .d-table-header-group-md {
-    display: table-header-group; }
+    display: table-header-group !important; }
   .d-table-footer-group-md {
-    display: table-footer-group; }
+    display: table-footer-group !important; }
   .d-table-row-group-md {
-    display: table-row-group; }
+    display: table-row-group !important; }
   .d-table-cell-md {
-    display: table-cell; }
+    display: table-cell !important; }
   .d-table-column-md {
-    display: table-column; }
+    display: table-column !important; }
   .d-table-row-md {
-    display: table-row; }
+    display: table-row !important; }
   .d-none-md {
-    display: none; }
+    display: none !important; }
   .d-initial-md {
-    display: initial; }
+    display: initial !important; }
   .d-inherit-md {
-    display: inherit; }
+    display: inherit !important; }
   .fix-t-md {
     position: fixed;
     top: 0;
@@ -1605,49 +1605,49 @@
   .valign-text-bottom-lg {
     vertical-align: text-bottom; }
   .d-block-lg {
-    display: block; }
+    display: block !important; }
   .d-inline-lg {
-    display: inline; }
+    display: inline !important; }
   .d-contents-lg {
-    display: contents; }
+    display: contents !important; }
   .d-grid-lg {
-    display: grid; }
+    display: grid !important; }
   .d-inline-block-lg {
-    display: inline-block; }
+    display: inline-block !important; }
   .d-inline-flex-lg {
-    display: inline-flex; }
+    display: inline-flex !important; }
   .d-inline-grid-lg {
-    display: inline-grid; }
+    display: inline-grid !important; }
   .d-inline-table-lg {
-    display: inline-table; }
+    display: inline-table !important; }
   .d-list-item-lg {
-    display: list-item; }
+    display: list-item !important; }
   .d-run-in-lg {
-    display: run-in; }
+    display: run-in !important; }
   .d-table-lg {
-    display: table; }
+    display: table !important; }
   .d-table-caption-lg {
-    display: table-caption; }
+    display: table-caption !important; }
   .d-table-column-group-lg {
-    display: table-column-group; }
+    display: table-column-group !important; }
   .d-table-header-group-lg {
-    display: table-header-group; }
+    display: table-header-group !important; }
   .d-table-footer-group-lg {
-    display: table-footer-group; }
+    display: table-footer-group !important; }
   .d-table-row-group-lg {
-    display: table-row-group; }
+    display: table-row-group !important; }
   .d-table-cell-lg {
-    display: table-cell; }
+    display: table-cell !important; }
   .d-table-column-lg {
-    display: table-column; }
+    display: table-column !important; }
   .d-table-row-lg {
-    display: table-row; }
+    display: table-row !important; }
   .d-none-lg {
-    display: none; }
+    display: none !important; }
   .d-initial-lg {
-    display: initial; }
+    display: initial !important; }
   .d-inherit-lg {
-    display: inherit; }
+    display: inherit !important; }
   .fix-t-lg {
     position: fixed;
     top: 0;

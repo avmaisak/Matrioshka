@@ -129,7 +129,7 @@ $brd-style : (
 }
 
 @mixin display($type){
-	display:$type;
+	display:$type !important;
 }
 
 @mixin display-suffix($suffix){

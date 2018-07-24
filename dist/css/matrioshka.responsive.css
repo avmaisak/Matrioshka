@@ -1,23 +1,127 @@
 @media screen and (max-width: 36rem) {
   .show-smx {
-    visibility: visible; }
+    visibility: visible !important; } }
+
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+  .show-smx {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 62rem) and (max-width: 75rem) {
+  .show-smx {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 75rem) {
+  .show-smx {
+    visibility: hidden !important; } }
+
+@media screen and (max-width: 36rem) {
   .hide-smx {
-    visibility: hidden; } }
+    visibility: visible !important; } }
+
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+  .hide-smx {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 62rem) and (max-width: 75rem) {
+  .hide-smx {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 75rem) {
+  .hide-smx {
+    visibility: hidden !important; } }
+
+@media screen and (max-width: 36rem) {
+  .show-sm {
+    visibility: hidden !important; } }
 
 @media screen and (min-width: 36rem) and (max-width: 62rem) {
   .show-sm {
-    visibility: visible; }
+    visibility: visible !important; } }
+
+@media screen and (min-width: 62rem) and (max-width: 75rem) {
+  .show-sm {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 75rem) {
+  .show-sm {
+    visibility: hidden !important; } }
+
+@media screen and (max-width: 36rem) {
   .hide-sm {
-    visibility: hidden; } }
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+  .hide-sm {
+    visibility: visible !important; } }
+
+@media screen and (min-width: 62rem) and (max-width: 75rem) {
+  .hide-sm {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 75rem) {
+  .hide-sm {
+    visibility: hidden !important; } }
+
+@media screen and (max-width: 36rem) {
+  .show-md {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+  .show-md {
+    visibility: hidden !important; } }
 
 @media screen and (min-width: 62rem) and (max-width: 75rem) {
   .show-md {
-    visibility: visible; }
+    visibility: visible !important; } }
+
+@media screen and (min-width: 75rem) {
+  .show-md {
+    visibility: hidden !important; } }
+
+@media screen and (max-width: 36rem) {
   .hide-md {
-    visibility: hidden; } }
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+  .hide-md {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 62rem) and (max-width: 75rem) {
+  .hide-md {
+    visibility: visible !important; } }
+
+@media screen and (min-width: 75rem) {
+  .hide-md {
+    visibility: hidden !important; } }
+
+@media screen and (max-width: 36rem) {
+  .show-lg {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+  .show-lg {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 62rem) and (max-width: 75rem) {
+  .show-lg {
+    visibility: hidden !important; } }
 
 @media screen and (min-width: 75rem) {
   .show-lg {
-    visibility: visible; }
+    visibility: visible !important; } }
+
+@media screen and (max-width: 36rem) {
   .hide-lg {
-    visibility: hidden; } }
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+  .hide-lg {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 62rem) and (max-width: 75rem) {
+  .hide-lg {
+    visibility: hidden !important; } }
+
+@media screen and (min-width: 75rem) {
+  .hide-lg {
+    visibility: visible !important; } }

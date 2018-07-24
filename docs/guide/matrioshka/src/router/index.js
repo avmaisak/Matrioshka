@@ -5,6 +5,7 @@ import Start from '@/components/Start'
 import Grid from '@/components/Grid'
 import Palette from '@/components/Palette'
 import Icons from '@/components/Icons'
+import Responsive from '@/components/Responsive'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/Icons',
       name: 'Icons',
       component: Icons
+    },
+    {
+      path: '/Responsive',
+      name: 'Responsive',
+      component: Responsive
     }
   ]
 })

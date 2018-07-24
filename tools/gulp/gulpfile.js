@@ -171,12 +171,12 @@ gulp.task('svg2png',  () => {
 });
 
 gulp.task('default', gulp.series([
-	'clean-all',
+	//'clean-all',
 	'sass',
 	'css-all',
 	'css-all-min',
 	'css-all-tarball',
-	'make-icons',
-	'make-icon-sprite',
-	'svg2png'
+	//'make-icons',
+	//'make-icon-sprite',
+	//'svg2png'
 ]));

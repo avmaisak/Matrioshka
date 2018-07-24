@@ -1,0 +1,23 @@
+@media screen and (max-width: 36rem) {
+  .show-smx {
+    visibility: visible; }
+  .hide-smx {
+    visibility: hidden; } }
+
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+  .show-sm {
+    visibility: visible; }
+  .hide-sm {
+    visibility: hidden; } }
+
+@media screen and (min-width: 62rem) and (max-width: 75rem) {
+  .show-md {
+    visibility: visible; }
+  .hide-md {
+    visibility: hidden; } }
+
+@media screen and (min-width: 75rem) {
+  .show-lg {
+    visibility: visible; }
+  .hide-lg {
+    visibility: hidden; } }

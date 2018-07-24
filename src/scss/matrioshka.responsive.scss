@@ -1,0 +1,44 @@
+@import "core/config/_variables";
+@import "core/mixins/_mediaqueries";
+
+@mixin show_hide($media) {
+	.show-#{$media} {
+		visibility:visible;
+	}
+	.hide-#{$media} {
+		visibility:hidden;
+	}
+}
+
+@each $media in $media-queries-arr{
+
+	@if $media == smx {
+		@include smx() {
+			@include show_hide(#{$media})
+			// .show-#{$media} {
+			// 	visibility:visible;
+			// }
+			// .hide-#{$media} {
+			// 	visibility:hidden;
+			// }
+		}
+	 }
+
+	 @if $media == sm {
+		@include sm() {
+			@include show_hide(#{$media})
+		}
+	 }
+
+	 @if $media == md {
+		@include md() {
+			@include show_hide(#{$media})
+		}
+	}
+
+	 @if $media == lg {
+		@include lg() {
+			@include show_hide(#{$media})
+		}
+	 }
+}

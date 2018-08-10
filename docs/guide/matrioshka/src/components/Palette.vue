@@ -13,20 +13,20 @@
     <br />
     <div class="clr-bg-green-100 clr-brd-green-600 txt-c p-1">Этому элементу назначен цвет фона и бордюра.</div>
 
-    <pre class="p-2 clr-bg-grey-100 m-t-2 m-b-2 clr-grey-700">
+    <pre class="p-2 m-t-2 m-b-2 clr-grey-700">
       &lt;div class="clr-bg-green-100 clr-brd-green-600">
         Этому элементу назначен цвет фона и бордюра.
       &lt;/div></pre>
 
     <h2 class="clr-indigo-400 m-b-2 txt-600">Цветовой набор</h2>
-    <div class="txt-c clr-bg-grey-200 p-1 clearfix">
-      <div v-for="c in colors" v-bind:key="c" class="d-inline-block w-30 m-1 txt-l clr-brd-grey-500 brd-style-dotted flt-l clr-bg-pal-def-white" :title="c">
+    <div class="txt-c  p-1 clearfix">
+      <div v-for="c in colors" v-bind:key="c" class="d-inline-block w-30 m-1 txt-l " :title="c">
         <div>
           <div>
               <p class="p-1 txt-c">{{c}}</p>
           </div>
-          <div>
-            <div :class='`clr-bg-${c}`' class="p-2 brd-style-none clr-brd-grey-800"></div>
+          <div class="txt-c m-b-1">
+            <a class="circle d-inline-block" :class='`clr-bg-${c}`'></a>
           </div>
         </div>
     </div>
@@ -341,3 +341,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.circle{
+  border-radius: 50%;
+  width:3rem;
+  height:3rem;
+}
+</style>
+
